@@ -7,6 +7,12 @@
     "explore": "gridsome explore"
   },
   "dependencies": {
-    "gridsome": "^0.7.0"
+    "gridsome": "^0.7.0",
+    "typeface-nunito-sans": "0.0.72",
+    "vue-responsive-video-background-player": "^1.1.2",
+    "vue-videobg": "^2.0.0"
+  },
+  "devDependencies": {
+    "gridsome-plugin-tailwindcss": "^3.0.1"
   }
 }
