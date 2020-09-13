@@ -5,6 +5,13 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: 'Gridsome',
-  plugins: []
-}
+  siteName: 'ZetterMedia',
+  siteDescription: "INFO OM ZETTERMEDIA",
+  siteUrl: 'https://zettermedia.se',
+  titleTemplate: `%s | ZetterMedia AB`,
+  plugins: [
+	{
+	  use: "gridsome-plugin-tailwindcss"
+	},  
+  ]
+};
