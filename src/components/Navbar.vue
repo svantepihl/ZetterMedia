@@ -8,13 +8,13 @@
 			</div>
 
 			<div class="block lg:hidden" @click="toggleMenu">
-				<button id="nav-toggle" class="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-white hover:border-white">
+				<button id="nav-toggle" class="flex items-center px-3 py-2 border rounded text-white border-transparent hover:text-white hover:border-white">
 					<svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
 				</button>
 			</div>
 
-			<div v-bind:class="{ hidden: !showMenu }" class="w-full flex-grow lg:flex lg:items-center lg:w-auto lg:block pt-6 lg:pt-0" id="nav-content">
-				<ul id="menu" class="list-reset lg:flex justify-end flex-1 items-center">
+			<div v-bind:class="{ hidden: !showMenu }" class="w-full flex-grow lg:flex lg:items-center lg:w-auto pt-6 lg:pt-0" id="nav-content">
+				<ul id="menu" class="list-reset lg:flex justify-end flex-1 items-center lg:w-auto">
 					<li class="spin">
 						<a class="text-white m-0 p-0" href="#">
 							<p><span style="-webkit-transition-delay: 0.00s; transition-delay: 0s;">J</span></p>
@@ -45,7 +45,7 @@
 							<p><span style="-webkit-transition-delay: 0.10s; transition-delay: 0.10s;">S</span></p>
 						</a>
 					</li>
-					<li class="spin mr-2">
+					<li class="spin mr-3">
 						<a class="text-white m-0 p-0" href="#">
 							<p><span style="-webkit-transition-delay: 0.00s; transition-delay: 0s;">K</span></p>
 							<p><span style="-webkit-transition-delay: 0.02s; transition-delay: 0.02s;">O</span></p>
@@ -80,9 +80,13 @@
 
 
 <style scoped>
+#nav-content{
+	transition: visibility 0s linear 0.33s, opacity 0.33s linear;
+}
+
 li {
 	margin-left: 35px;
-	font-size: 11px;
+	font-size: 0.75rem;
 }
 
 p {
