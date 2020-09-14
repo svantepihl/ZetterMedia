@@ -1,8 +1,10 @@
 <template>
 	<div class="min-w-screen min-h-screen m-0 p-0">
 		<Navbar></Navbar>
-		<Video></Video>
-		<Services></Services>
+		<div id="body-container">
+			<Video></Video>
+			<Services></Services>
+		</div>		
 	</div>
 </template>
 
