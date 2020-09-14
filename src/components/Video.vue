@@ -45,4 +45,42 @@
     left: 5px;
 }
 
+#fv .copy {
+    width: 300px;
+    height: 42px;
+    font-size: 42px;
+    line-height: 42px;
+    font-weight: 700;
+    text-align: center;
+    position: fixed;
+    top: -140px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    z-index: 100;
+    color: #fff;
+}
+
+.f_trump {
+    font-family: "trumpgothicpro", sans-serif;
+    font-weight: 500;
+}
+
+.js-text p {
+    display: inline-block;
+    overflow: hidden;
+}
+
+.js-text p span {
+    display: inline-block;
+    -webkit-transform: translate3d(0,100%,0);
+    transform: translate3d(0,100%,0);
+}
+
+.js-text.on p span, .on .js-text p span {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
 </style>

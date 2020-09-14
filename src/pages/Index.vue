@@ -7,7 +7,7 @@
 <script>
 export default {
   metaInfo: {
-    title: 'Hello, world!'
+    title: 'inte svante'
   }
 }
 </script>
