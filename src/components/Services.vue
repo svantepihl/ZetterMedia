@@ -1,23 +1,20 @@
 <template>
 <div id="service_list" class=" h-screen">
       <div v-bind:class="{ on: showServices }" class="block js-sc">
-        <h3 class="txt1 js-sc_h tra20">OUR SERVICES</h3>
-        <h2 class="txt2 js-sc_h tra20 delay01">Brand design</h2>
-        <h2 class="txt2 js-sc_h tra20 delay02">Media Strategy</h2>
-        <h2 class="txt2 js-sc_h tra20 delay03">Digital Design + Tech</h2>
-        <h2 class="txt2 btm js-sc_h tra20 delay04">Content Production</h2>
-        <div class="btn_detail_line js-sc_h tra20 delay09 js-text_btn rx360 text-xs">
-          <a href="" class=" tra12 done">
+        <h3 class="txt1 js-sc_h tra20">VÅRA TJÄNSTER</h3>
+        <h2 class="txt2 js-sc_h tra20 delay01">Videoproduktion</h2>
+        <h2 class="txt2 js-sc_h tra20 delay02">Media strategi</h2>
+        <h2 class="txt2 js-sc_h tra20 delay03">Webbutveckling + SEO</h2>
+        <h2 class="txt2 btm js-sc_h tra20 delay04">Rådgivning</h2>
+        <div class="btn_detail_line js-sc_h tra20 delay09 js-text_btn rx360 text-xs border-black">
+          <a href="" class="tra12 done">
 			<p><span class="tra12" style="-webkit-transition-delay: 0s; transition-delay: 0s;">L</span></p>
-			<p><span class="tra12" style="-webkit-transition-delay: 0.02s; transition-delay: 0.02s;">E</span></p>
-			<p><span class="tra12" style="-webkit-transition-delay: 0.04s; transition-delay: 0.04s;">A</span></p>
-			<p><span class="tra12" style="-webkit-transition-delay: 0.06s; transition-delay: 0.06s;">R</span></p>
-			<p><span class="tra12" style="-webkit-transition-delay: 0.08s; transition-delay: 0.08s;">N</span></p> 
-			<p><span class="tra12" style="-webkit-transition-delay: 0.08s; transition-delay: 0.08s;">&#160;</span></p> 
-			<p><span class="tra12" style="-webkit-transition-delay: 0.12s; transition-delay: 0.12s;">M</span></p>
-			<p><span class="tra12" style="-webkit-transition-delay: 0.14s; transition-delay: 0.14s;">O</span></p>
-			<p><span class="tra12" style="-webkit-transition-delay: 0.16s; transition-delay: 0.16s;">R</span></p>
-			<p><span class="tra12" style="-webkit-transition-delay: 0.18s; transition-delay: 0.18s;">E</span></p>
+			<p><span class="tra12" style="-webkit-transition-delay: 0.02s; transition-delay: 0.02s;">Ä</span></p>
+			<p><span class="tra12" style="-webkit-transition-delay: 0.04s; transition-delay: 0.04s;">S</span></p>
+			<p><span class="tra12" style="-webkit-transition-delay: 0.06s; transition-delay: 0.06s;">&#160;</span></p>
+			<p><span class="tra12" style="-webkit-transition-delay: 0.08s; transition-delay: 0.08s;">M</span></p> 
+			<p><span class="tra12" style="-webkit-transition-delay: 0.08s; transition-delay: 0.08s;">E</span></p> 
+			<p><span class="tra12" style="-webkit-transition-delay: 0.12s; transition-delay: 0.12s;">R</span></p>
 		  </a>
         </div>
       </div>
@@ -36,14 +33,17 @@
 		methods: {
 			updateScroll() {
 				this.scrollPos = window.scrollY
-				if (this.scrollPos>500) {
+				if (this.scrollPos>650) {
 					this.showServices = true
 				}  
     		}
 		},
 		mounted() {
 			window.addEventListener('scroll', this.updateScroll);
-		}  
+		},
+        destroyed () {
+            window.removeEventListener('scroll', this.handleScroll);
+        }, 
 	}
 </script>
 
@@ -99,6 +99,7 @@
 
 .btn_detail_line {
     display: inline-block;
+    border-bottom-width: 1px;
 }
 
 .js-sc, .js-sc_h {
@@ -124,13 +125,13 @@
 }
 
 .tra12 {
-    -webkit-transition: all 1200ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
-    transition: all 1200ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+    -webkit-transition: all 1400ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+    transition: all 1400ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
 }
 
 .tra20 {
-    -webkit-transition: all 2000ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
-    transition: all 2000ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+    -webkit-transition: all 2500ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+    transition: all 2500ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
 }
 
 .delay01 {
