@@ -9,27 +9,12 @@ module.exports = {
   siteDescription: "INFO OM ZETTERMEDIA",
   siteUrl: 'https://zettermedia.se',
   titleTemplate: `%s | ZetterMedia AB`,
-  plugins: [
-	{
-	  use: "gridsome-plugin-tailwindcss"
-	},  
-  ]
-};
-
-module.exports = {
-  siteName: 'ZetterMedia',
-  siteDescription: "INFO OM ZETTERMEDIA",
-  siteUrl: 'https://zettermedia.se',
-  titleTemplate: `%s | ZetterMedia AB`,
   transformers: {
     remark: {
       externalLinksTarget: '_blank',
       externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
       anchorClassName: 'icon icon-link',
       plugins: [
-        {
-          use: "gridsome-plugin-tailwindcss"
-        }
       ]
     }
   },
@@ -53,5 +38,8 @@ module.exports = {
         publicPath: `/admin`
       }
     },
+    {
+      use: "gridsome-plugin-tailwindcss"
+    }
   ]
 }

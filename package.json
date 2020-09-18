@@ -13,8 +13,8 @@
     "gridsome-plugin-netlify-cms": "^1.0.9",
     "netlify-cms": "^2.10.57",
     "typeface-nunito-sans": "0.0.72",
-    "vue-responsive-video-background-player": "^1.1.2",
-    "vue-videobg": "^2.0.0"
+    "vue-typed-js": "^0.1.2",
+    "vue2-smooth-scroll": "^1.5.0"
   },
   "devDependencies": {
     "gridsome-plugin-tailwindcss": "^3.0.1"

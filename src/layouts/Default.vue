@@ -12,14 +12,15 @@
 	import Navbar from '../components/Navbar.vue';
 	import Video from '../components/Video.vue';
 	import Services from '../components/Services.vue'
+
   	export default {
-		  components: {Navbar,Video,Services}
+		components: {Navbar,Video,Services},
 	}
 </script>
 
 <style>
 body{
-	background-color: gray;
+	scroll-behavior: smooth !important;
 }
 
 

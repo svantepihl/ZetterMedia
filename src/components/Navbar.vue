@@ -3,7 +3,7 @@
 		<nav class="flex items-center justify-between flex-wrap bg-transparent p-6 fixed w-full z-10 top-0">
 			<div class="flex items-center flex-shrink-0 text-white mr-6">
 				<a class="text-white no-underline hover:text-white hover:no-underline" href="#">
-					<span class="text-2xl pl-2"><i class="em em-grinning"></i> ZETTERMEDIA</span>
+					<g-image src="~/assets/img/logo.png" width="150px" quality="100" blur="0" immediate="true"></g-image>
 				</a>
 			</div>
 
@@ -24,7 +24,7 @@
 						</a>
 					</li>
 					<li class="spin">
-						<a class="text-white m-0 p-0" href="#">
+						<a class="text-white m-0 p-0" href="#services" v-smooth-scroll>
 							<p><span style="-webkit-transition-delay: 0.00s; transition-delay: 0s;">T</span></p>
 							<p><span style="-webkit-transition-delay: 0.02s; transition-delay: 0.02s;">J</span></p>
 							<p><span style="-webkit-transition-delay: 0.04s; transition-delay: 0.04s;">Ä</span></p>

@@ -1,22 +1,8 @@
 <template>
-<div id="service_list" class=" h-screen">
-      <div v-bind:class="{ on: showServices }" class="block js-sc">
-        <h3 class="txt1 js-sc_h tra20">VÅRA TJÄNSTER</h3>
-        <h2 class="txt2 js-sc_h tra20 delay01">Videoproduktion</h2>
-        <h2 class="txt2 js-sc_h tra20 delay02">Media strategi</h2>
-        <h2 class="txt2 js-sc_h tra20 delay03">Webbutveckling + SEO</h2>
-        <h2 class="txt2 btm js-sc_h tra20 delay04">Rådgivning</h2>
-        <div class="btn_detail_line js-sc_h tra20 delay09 js-text_btn rx360 text-xs border-black">
-          <a href="" class="tra12 done">
-			<p><span class="tra12" style="-webkit-transition-delay: 0s; transition-delay: 0s;">L</span></p>
-			<p><span class="tra12" style="-webkit-transition-delay: 0.02s; transition-delay: 0.02s;">Ä</span></p>
-			<p><span class="tra12" style="-webkit-transition-delay: 0.04s; transition-delay: 0.04s;">S</span></p>
-			<p><span class="tra12" style="-webkit-transition-delay: 0.06s; transition-delay: 0.06s;">&#160;</span></p>
-			<p><span class="tra12" style="-webkit-transition-delay: 0.08s; transition-delay: 0.08s;">M</span></p> 
-			<p><span class="tra12" style="-webkit-transition-delay: 0.08s; transition-delay: 0.08s;">E</span></p> 
-			<p><span class="tra12" style="-webkit-transition-delay: 0.12s; transition-delay: 0.12s;">R</span></p>
-		  </a>
-        </div>
+<div id="services" class="h-screen w-screen min-h-screen relative bg-gray-100 z-30">
+      <div v-bind:class="{ on: showServices }" class=" w-4/5 max-w-screen-md bg-red-600">
+
+          
       </div>
     </div>
 </template>
@@ -49,21 +35,13 @@
 
 <style scoped>
 
-#service_list {
-	height: 100vh;
-    width: 100%;
+#services {
     min-height: 830px;
     position: relative;
     z-index: 30;
-    background-color: #fff;
-    background-image: url(../assets/img/service_list_circle.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 500px 500px;
-    background-attachment: fixed;
 }
 
-#service_list .block {
+#services .block {
     width: 88%;
     max-width: 840px;
     /* height: 578px; */
@@ -76,7 +54,7 @@
     margin: auto;
 }
 
-#service_list .block .txt1 {
+#services .block .txt1 {
     font-size: 15px;
     line-height: 30px;
     font-weight: 400;
@@ -85,7 +63,7 @@
     color: #999;
 }
 
-#service_list .block .txt2 {
+#services .block .txt2 {
     font-size: 46px;
     line-height: 52px;
     font-weight: 300;
@@ -93,7 +71,7 @@
     margin: 0 0 16px -3px;
 }
 
-#service_list .block .txt2.btm {
+#services .block .txt2.btm {
     margin-bottom: 45px;
 }
 
@@ -159,4 +137,7 @@
     transition-delay: 0.9s;
 }
 
+body {
+   scroll-behavior: smooth !important; 
+}
 </style>
