@@ -37,7 +37,13 @@ export default function (Vue, {router, appOptions}) {
       currentStep: 0,
       email: "",
       tel: "",
-      budget: 0
+      budget: 0,
+      audio: false,
+      video: false,
+      smc: false,
+      webb: false,
+      streaming: false
+
     },
     mutations: {
       next (state) {
@@ -45,7 +51,7 @@ export default function (Vue, {router, appOptions}) {
       },
       previous (state) {
         state.currentStep--
-      }
+      },
     }
   })
 }

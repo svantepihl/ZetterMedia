@@ -8,7 +8,6 @@
                 <NavButtons></NavButtons>
             </div>
         </div>
-            </div>
     </div>
 </template>
 
