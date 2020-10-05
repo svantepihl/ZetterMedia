@@ -1,17 +1,20 @@
 <template>
-    <div class="inline-flex w-full content-evenly">
-        <button class=" ml-auto bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-l">
-            Prev
+    <div class="flex flex-wrap  mt-auto mx-auto justify-items-center justify-center my-8">
+        <button v-on:click="$store.commit('previous')" v-if="currentStep !== 0 && servicesNeeded !== 0" class=" mx-2 bg-transparent hover:bg-black text-black font-semibold hover:text-white py-2 px-4 border border-black hover:border-transparent rounded">
+            Back
         </button>
-        <button class=" mr-auto bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-r">
+
+        <button v-on:click="$store.commit('next')" v-if="currentStep < 4 && servicesNeeded !== 0" class=" mx-2 bg-transparent hover:bg-black text-black font-semibold hover:text-white py-2 px-4 border border-black hover:border-transparent rounded">
             Next
         </button>
     </div>
 </template>
 
 <script>
+import { mapState } from 'vuex';
 export default {
-    name: "NavButtons"
+    name: "NavButtons",
+    computed: mapState(['currentStep','servicesNeeded'])
 
 }
 </script>

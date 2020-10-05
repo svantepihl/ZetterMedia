@@ -38,12 +38,12 @@ export default function (Vue, {router, appOptions}) {
       email: "",
       tel: "",
       budget: 0,
+      servicesNeeded: 0,
       audio: false,
       video: false,
-      smc: false,
-      webb: false,
-      streaming: false
-
+      social: false,
+      web: false,
+      stream: false
     },
     mutations: {
       next (state) {
@@ -52,6 +52,60 @@ export default function (Vue, {router, appOptions}) {
       previous (state) {
         state.currentStep--
       },
+      toggleService (state, s) {
+        if (state.choice.has(s)) {
+          state.choice.delete(s)
+          state.servicesNeeded--
+        } else {
+          state.choice.add(s)
+          state.servicesNeeded++
+        }
+      },
+      toggleAudio(state) {
+        if (state.audio == true) {
+          state.audio = false
+          state.servicesNeeded--
+        } else {
+          state.audio = true
+          state.servicesNeeded++
+        }
+      },
+      toggleVideo(state) {
+        if (state.video == true) {
+          state.video = false
+          state.servicesNeeded--
+        } else {
+          state.video = true
+          state.servicesNeeded++
+        }
+      },
+      toggleSocial(state) {
+        if (state.social == true) {
+          state.social = false
+          state.servicesNeeded--
+        } else {
+          state.social = true
+          state.servicesNeeded++
+        }
+      },
+      toggleWeb(state) {
+        if (state.web == true) {
+          state.web = false
+          state.servicesNeeded--
+        } else {
+          state.web = true
+          state.servicesNeeded++
+        }
+      },
+      toggleStream(state) {
+        if (state.stream == true) {
+          state.stream = false
+          state.servicesNeeded--
+        } else {
+          state.stream = true
+          state.servicesNeeded++
+        }
+      }
     }
   })
 }
