@@ -1,11 +1,11 @@
 <template>
-    <div class="flex flex-wrap  mt-auto mx-auto justify-items-center justify-center my-8">
-        <button v-on:click="$store.commit('previous')" v-if="currentStep !== 0 && servicesNeeded !== 0" class=" mx-2 bg-transparent hover:bg-black text-black font-semibold hover:text-white py-2 px-4 border border-black hover:border-transparent rounded">
-            Back
+    <div class="flex flex-wrap mt-20 mx-auto justify-items-center justify-center my-8">
+        <button v-on:click="$store.commit('previous')" v-if="currentStep > 0" class=" mx-2 bg-transparent hover:bg-black text-black font-semibold hover:text-white py-2 px-4 border border-black hover:border-transparent rounded">
+            Tillbaka
         </button>
 
-        <button v-on:click="$store.commit('next')" v-if="currentStep < 4 && servicesNeeded !== 0" class=" mx-2 bg-transparent hover:bg-black text-black font-semibold hover:text-white py-2 px-4 border border-black hover:border-transparent rounded">
-            Next
+        <button v-on:click="$store.commit('next')" v-if="currentStep > 4" class=" mx-2 bg-transparent hover:bg-black text-black font-semibold hover:text-white py-2 px-4 border border-black hover:border-transparent rounded">
+            Skicka!
         </button>
     </div>
 </template>

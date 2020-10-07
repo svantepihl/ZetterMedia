@@ -1,29 +1,39 @@
 <template>
     <div id="services" class="h-screen w-screen relative bg-gray-100 z-30 justify-items-center items-center">
-        <div class="mx-0 h-full w-full items-center flex justify-items-center ">
-            <div v-bind:class="{animate__fadeIn : showServices, 'opacity-100' : showServices }" class="opacity-0 animate__animated animate__slow mx-auto w-full h-full flex flex-col">
-                <div class="w-full h-64">
-					<transition name="fade">
-						<Offers v-if="currentStep === 0"></Offers>
-					</transition>
+        <div class="mx-0 h-full w-full items-center flex justify-items-center">
+            <transition name="fade">
+				<div v-if="showServices" class="m-0 w-screen h-screen">
+					<div class="grid-container">
+						<div class="ContentArea">
+							<Selectors></Selectors>
+						</div>
+							
+						<div class="NavigationArea">
+							<NavButtons></NavButtons>
+						</div>
+							
+						<div class="ProgressBar">
+							<ProgressBar></ProgressBar>
+						</div>
+					</div>
 				</div>
-                <NavButtons></NavButtons>
-				<ProgressBar></ProgressBar>
-            </div>
-        </div>
+			</transition> 
+		</div>
     </div>
 </template>
 
 <script>
     import 'animate.css'
     import NavButtons from '../components/Form/NavButtons'
-	import Offers from '../components/Form/Offers'
+	import ServiceOffers from '../components/Form/ServiceOffers'
 	import ProgressBar from '../components/Form/ProgressBar'
+	import VideoOffers from '../components/Form/VideoOffers';
+	import Selectors from '../components/Form/Selectors'
 	import { mapState } from 'vuex';
 	export default {
         name: "Services",
-		components: {NavButtons,Offers,ProgressBar},
-		computed: mapState(['currentStep']),
+		components: {NavButtons,ServiceOffers,ProgressBar,VideoOffers, Selectors},
+		computed: mapState(['currentStep','serviceNeeded','serviceType']),
 		data () {
 			return {
 			showServices: false,
@@ -53,10 +63,28 @@ body {
    scroll-behavior: smooth !important; 
 }
 
-.fade-enter-active, .fade-leave-active {
-	transition: opacity .5s;	
+.grid-container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr 10fr 3fr 50px;
+  gap: 10px 0px;
+  grid-template-areas:
+    "."
+    "ContentArea"
+    "NavigationArea"
+    "ProgressBar";
 }
-.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
-	opacity: 0;
+
+.ContentArea { 
+	grid-area: ContentArea; 
+	align-items: center;
+	justify-items: center;
 }
+
+.NavigationArea { grid-area: NavigationArea; }
+
+.ProgressBar { grid-area: ProgressBar; }
+
+
 </style>
