@@ -78,8 +78,9 @@ body {
 
 .ContentArea { 
 	grid-area: ContentArea; 
+	display: flex;
+	justify-content: center;
 	align-items: center;
-	justify-items: center;
 }
 
 .NavigationArea { grid-area: NavigationArea; }

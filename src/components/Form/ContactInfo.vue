@@ -1,14 +1,22 @@
 <template>
 
- <form class="max-w-md mx-auto overflow-hidden p-6 space-y-10 text-3xl mt-48">
-  <div class="relative border-b-2 focus-within:border-blue-500">
-    <input type="text" name="namn" placeholder=" " class="block w-full appearance-none focus:outline-none bg-transparent" />
+    <form class="max-w-md mx-auto overflow-hidden p-6 space-y-10 text-2xl mt-10">
+    <div class="relative border-b-2 focus-within:border-blue-500">
+    <input v-model="name" type="text" name="namn" placeholder=" " class="block w-full appearance-none focus:outline-none bg-transparent" />
     <label for="namn" class="absolute top-0 -z-1 duration-300 origin-0">Namn</label>
-  </div>
-  <div class="relative border-b-2 focus-within:border-blue-500">
-    <input type="text" name="email" placeholder=" " class="block w-full appearance-none focus:outline-none bg-transparent" />
+    </div>
+    <div class="relative border-b-2 focus-within:border-blue-500">
+    <input v-model="email" type="text" name="email" placeholder=" " class="block w-full appearance-none focus:outline-none bg-transparent" />
     <label for="email" class="absolute top-0 -z-1 duration-300 origin-0">Email</label>
-  </div>
+    </div>
+
+
+    <div class="relative">
+        <button v-on:click="$store.commit('next')" v-if="currentStep > 4" class=" mx-2 bg-transparent hover:bg-black text-black font-semibold hover:text-white py-2 px-4 border border-black hover:border-transparent rounded">
+            Skicka!
+        </button>
+    </div>
+
 </form>
 </template>
 

@@ -1,12 +1,10 @@
 <template>
     <div class="container mx-auto">
         
-            <h1 class=" text-6xl text-center mt-24">
-                <transition name="fade">        
-                    <span id="1" v-if="currentStep == 0">Vad behöver ni hjälp med?</span>
-                    <span id="2" v-else-if="currentStep == 1 && serviceNeeded == 'video'">Vilken typ av video?</span>
-                    <span id="2" v-else-if="currentStep == 2"></span>
-                </transition>
+            <h1 class=" text-5xl text-center mt-24">       
+                <span id="1" v-if="currentStep == 0">Vad behöver ni hjälp med?</span>
+                <span id="2" v-else-if="currentStep == 1 && serviceNeeded == 'video'">Vilken typ av video?</span>
+                <span id="2" v-else-if="currentStep == 2">Kontaktuppgifter</span>
             </h1>
 
 
