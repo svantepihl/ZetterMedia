@@ -1,4 +1,8 @@
 module.exports = {
+  future: {
+    purgeLayersByDefault: true,
+    emoveDeprecatedGapUtilities: true
+  },
   purge: [
     './src/**/*.html',
     './src/**/*.vue',
