@@ -1,15 +1,39 @@
 <template>
-<div id="services" class="h-screen w-screen min-h-screen relative bg-gray-100 z-30">
-      <div v-bind:class="{ on: showServices }" class=" w-4/5 max-w-screen-md bg-red-600">
-
-          
-      </div>
+    <div id="services" class="h-auto min-h-screen w-screen relative bg-gray-100 z-30 justify-items-center items-center">
+        <div class="mx-0 h-full w-full items-center flex justify-items-center">
+            <transition name="fade">
+				<div v-if="showServices" class="m-0 p-0 w-screen h-screen">
+					<div class="grid-container">
+						<div class="ContentArea">
+							<Selectors></Selectors>
+						</div>
+							
+						<div class="NavigationArea">
+							<NavButtons></NavButtons>
+						</div>
+							
+						<div class="ProgressBar">
+							<ProgressBar></ProgressBar>
+						</div>
+					</div>
+				</div>
+			</transition> 
+		</div>
     </div>
 </template>
 
 <script>
+    import 'animate.css'
+    import NavButtons from '../components/Form/NavButtons'
+	import ServiceOffers from '../components/Form/ServiceOffers'
+	import ProgressBar from '../components/Form/ProgressBar'
+	import VideoOffers from '../components/Form/VideoOffers';
+	import Selectors from '../components/Form/Selectors'
+	import { mapState } from 'vuex';
 	export default {
-		name: "Services",
+        name: "Services",
+		components: {NavButtons,ServiceOffers,ProgressBar,VideoOffers, Selectors},
+		computed: mapState(['currentStep','serviceNeeded','serviceType']),
 		data () {
 			return {
 			showServices: false,
@@ -35,109 +59,30 @@
 
 <style scoped>
 
-#services {
-    min-height: 830px;
-    position: relative;
-    z-index: 30;
-}
-
-#services .block {
-    width: 88%;
-    max-width: 840px;
-    /* height: 578px; */
-    height: 386px;
-    position: absolute;
-    top: -10px;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    margin: auto;
-}
-
-#services .block .txt1 {
-    font-size: 15px;
-    line-height: 30px;
-    font-weight: 400;
-    margin-bottom: 18px;
-    letter-spacing: 0.14em;
-    color: #999;
-}
-
-#services .block .txt2 {
-    font-size: 46px;
-    line-height: 52px;
-    font-weight: 300;
-    color: #222;
-    margin: 0 0 16px -3px;
-}
-
-#services .block .txt2.btm {
-    margin-bottom: 45px;
-}
-
-.btn_detail_line {
-    display: inline-block;
-    border-bottom-width: 1px;
-}
-
-.js-sc, .js-sc_h {
-    -webkit-transform: translate3d(0,100px,0) scale(0.95);
-    transform: translate3d(0,100px,0) scale(0.95);
-    opacity: 0!important;
-}
-
-.js-sc.on, .js-sc.on .js-sc_h, #popup.on .js-sc_h, #block_menu.on .js-sc_h, .js-contact_hide_h.on .js-sc_h {
-    -webkit-transform: translate3d(0,0,0) scale(1);
-    transform: translate3d(0,0,0) scale(1);
-    opacity: 1!important;
-}
-
-.js-text_btn p,
-.js-text_btn p span {
-  display: inline-block;
-}
-
-.js-text_btn.rx360:hover p span {
-  -webkit-transform: rotateX(360deg);
-  transform: rotateX(360deg);
-}
-
-.tra12 {
-    -webkit-transition: all 1400ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
-    transition: all 1400ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
-}
-
-.tra20 {
-    -webkit-transition: all 2500ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
-    transition: all 2500ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
-}
-
-.delay01 {
-    -webkit-transition-delay: 0.1s;
-    transition-delay: 0.1s;
-}
-
-.delay02 {
-    -webkit-transition-delay: 0.2s;
-    transition-delay: 0.2s;
-}
-
-.delay03 {
-    -webkit-transition-delay: 0.3s;
-    transition-delay: 0.3s;
-}
-
-.delay04 {
-    -webkit-transition-delay: 0.4s;
-    transition-delay: 0.4s;
-}
-
-.delay09 {
-    -webkit-transition-delay: 0.9s;
-    transition-delay: 0.9s;
-}
-
 body {
    scroll-behavior: smooth !important; 
 }
+
+.grid-container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr 10fr 3fr 50px;
+  gap: 10px 0px;
+  grid-template-areas:
+    "."
+    "ContentArea"
+    "NavigationArea"
+    "ProgressBar";
+}
+
+.ContentArea { 
+	grid-area: ContentArea; 
+}
+
+.NavigationArea { grid-area: NavigationArea; }
+
+.ProgressBar { grid-area: ProgressBar; }
+
+
 </style>

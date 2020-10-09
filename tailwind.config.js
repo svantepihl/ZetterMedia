@@ -9,7 +9,14 @@ module.exports = {
       display: ['nunito-sans', 'sans-serif'],
       body: ['nunito-sans', 'sans-serif'],
     },
-    extend: {},
+    extend: {
+      transformOrigin: {
+        "0": "0%",
+      },
+      zIndex: {
+        "-1": "-1",
+      },
+    },
   },
   variants: {},
   plugins: [],
