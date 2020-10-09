@@ -1,7 +1,7 @@
 <template>
-    <div class="container mx-auto">
+    <div class="h-full w-full mx-auto">
         
-            <h1 class=" text-5xl text-center mt-24">       
+            <h1 class=" text-2xl sm:text-4xl text-center">       
                 <span id="1" v-if="currentStep == 0">Vad behöver ni hjälp med?</span>
                 <span id="2" v-else-if="currentStep == 1 && serviceNeeded == 'video'">Vilken typ av video?</span>
                 <span id="2" v-else-if="currentStep == 2">Kontaktuppgifter</span>

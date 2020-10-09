@@ -30,7 +30,9 @@ export default {
 
 input:focus-within ~ label,
 input:not(:placeholder-shown) ~ label {
-  @apply transform scale-75 -translate-y-8;
+  @apply transform; 
+  @apply scale-75; 
+  @apply -translate-y-8;
 }
 
 input:focus-within ~ label {

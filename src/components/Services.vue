@@ -1,8 +1,8 @@
 <template>
-    <div id="services" class="h-screen w-screen relative bg-gray-100 z-30 justify-items-center items-center">
+    <div id="services" class="h-auto min-h-screen w-screen relative bg-gray-100 z-30 justify-items-center items-center">
         <div class="mx-0 h-full w-full items-center flex justify-items-center">
             <transition name="fade">
-				<div v-if="showServices" class="m-0 w-screen h-screen">
+				<div v-if="showServices" class="m-0 p-0 w-screen h-screen">
 					<div class="grid-container">
 						<div class="ContentArea">
 							<Selectors></Selectors>
@@ -78,9 +78,6 @@ body {
 
 .ContentArea { 
 	grid-area: ContentArea; 
-	display: flex;
-	justify-content: center;
-	align-items: center;
 }
 
 .NavigationArea { grid-area: NavigationArea; }
