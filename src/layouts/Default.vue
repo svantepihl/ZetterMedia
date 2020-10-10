@@ -19,7 +19,15 @@
 </script>
 
 <style>
-  body{
+@font-face {
+font-family: 'steelfishregular';
+src: 	url('../assets/font/steelfish_rg-webfont.woff2') format('woff2'),
+		url('../assets/font/steelfish_rg-webfont.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+
+body{
 	scroll-behavior: smooth !important;
 	font-family: steelfishregular;
 }

@@ -1,0 +1,179 @@
+@tailwind base;
+
+@tailwind components;
+
+.button-base {
+  @apply bg-transparent;
+  @apply font-semibold;
+  @apply border;
+  @apply border-gray-400;
+  @apply rounded;
+  height: 7rem;
+  width: 7rem;
+  font-size: 10px;
+  @apply mx-2;
+  margin-top: 9px;
+}
+
+@screen xs {
+    .button-base{
+        height: 8.5rem;
+        width: 8.5rem;
+        font-size: 11px;
+        @apply mx-2;
+        margin-top: 9px;
+    }
+}
+
+@media (min-width: 640px) and (orientation: portrait) {
+  .button-base{
+    height: 12rem;
+    width: 12rem;
+    font-size: 14px;
+    @apply mx-4;
+    @apply my-4;
+}
+}
+
+@screen lg {
+  .button-base{
+    height: 13rem;
+    width: 13rem;
+    font-size: 16px;
+    @apply mx-5;
+    @apply my-5;
+  }
+}
+
+@screen xl {
+  .button-base{
+    height: 14rem;
+    width: 14rem;
+    font-size: 16px;
+    @apply mx-5;
+    @apply my-5;
+  }
+}
+
+
+.circle{
+  @apply hidden;
+}
+
+@screen xs {
+  .circle {
+    display: flex;
+    position: relative;
+    display: block;
+    width: 70%;
+    height: 0;
+    padding: 35% 0;
+    border-radius: 50%;
+    
+    /* Just making it pretty */
+    @shadow: rgba(0, 0, 0, .1);
+    background: #00000049;
+    border-color: gray;
+    border: 10px;
+    color: white;
+    text-align: center;
+    @apply text-xl
+  }
+}
+
+@screen sm {
+  .circle {
+    @apply hidden;
+  }
+}
+
+@screen md {
+  .circle {
+    display: flex;
+    position: relative;
+    display: block;
+    width: 50%;
+    height: 0;
+    padding: 25% 0;
+    border-radius: 50%;
+    
+    /* Just making it pretty */
+    @shadow: rgba(0, 0, 0, .1);
+    background: #00000049;
+    border-color: gray;
+    border: 10px;
+    color: white;
+    text-align: center;
+    @apply text-3xl
+  }
+}
+
+@screen lg {
+  .circle {
+    display: flex;
+    position: relative;
+    display: block;
+    width: 40%;
+    height: 0;
+    padding: 20% 0;
+    border-radius: 50%;
+    
+    /* Just making it pretty */
+    @shadow: rgba(0, 0, 0, .1);
+    background: #00000049;
+    border-color: gray;
+    border: 10px;
+    color: white;
+    text-align: center;
+    @apply text-3xl
+  }
+} 
+
+@screen xl {
+  .circle {
+    display: flex;
+    position: relative;
+    display: block;
+    width: 30%;
+    height: 0;
+    padding: 15% 0;
+    border-radius: 50%;
+    
+    /* Just making it pretty */
+    @shadow: rgba(0, 0, 0, .1);
+    background: #00000049;
+    border-color: gray;
+    border: 10px;
+    color: white;
+    text-align: center;
+    @apply text-3xl
+  }
+}
+
+@media (max-height: 414px) {
+  .circle {
+    @apply hidden;
+  }
+}
+
+
+@tailwind utilities;
+
+
+@layer base {
+/*   @font-face {
+    font-family: 'archivo_blackregular';
+    src: url('../../src/assets/font/archivoblack-webfont.woff') format('woff2'),
+          url('../../src/assets/font/archivoblack-webfont.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  } */
+
+  @font-face {
+    font-family: 'steelfishregular';
+    src: url('../../src/assets/font/steelfish_rg-webfont.woff2') format('woff2'),
+          url('../../src/assets/font/steelfish_rg-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+}
