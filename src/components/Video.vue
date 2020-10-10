@@ -7,7 +7,7 @@
     
     <div id="overlay" class="flex fixed h-screen w-screen z-40">
         <div class="circle m-auto">
-            <vue-typed-js class="w-full h-full flex content-start items-start mt-4 xs:mt-10" :showCursor="false" :typeSpeed="85" :strings="['<p><strong>ZETTER MEDIA</strong><br> är en contentbyrå som fokuserar på att skapa effektfullt innehåll.^600 Från film och ljud^400 till webb och design^500 skapar vi content att dela med världen.</p>']" :contentType="'html'">
+            <vue-typed-js class="w-full h-full flex content-start items-start mt-4 xs:mt-10 sm:mt-4" :showCursor="false" :typeSpeed="85" :strings="['<p><strong>ZETTER MEDIA</strong><br> är en contentbyrå som fokuserar på att skapa effektfullt innehåll.^600 Från film och ljud^400 till webb och design^500 skapar vi content att dela med världen.</p>']" :contentType="'html'">
                 <span class="typing w-full h-56 mx-3"></span>
             </vue-typed-js>
         </div>
@@ -15,7 +15,7 @@
     
     <a href="#services" v-smooth-scroll>
         <div id="scroll_down" class=" bg-no-repeat fixed z-50 text-white whitespace-no-wrap">
-            <p class="transform -rotate-90 relative">SKROLLA</p>
+            <p class="transform -rotate-90 relative text-base">SKROLLA</p>
         </div>
     </a>
     </div>
