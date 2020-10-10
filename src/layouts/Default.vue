@@ -27,6 +27,14 @@ font-weight: normal;
 font-style: normal;
 }
 
+@font-face {
+    font-family: 'archivo_blackregular';
+    src: url('../assets/font/archivoblack-webfont.woff') format('woff2'),
+          url('../assets/font/archivoblack-webfont.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
 body{
 	scroll-behavior: smooth !important;
 	font-family: steelfishregular;

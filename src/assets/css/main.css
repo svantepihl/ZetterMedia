@@ -15,6 +15,11 @@
   margin-top: 9px;
 }
 
+.button-base:hover {
+@apply border-2;
+@apply border-black;
+}
+
 @screen xs {
     .button-base{
         height: 8.5rem;

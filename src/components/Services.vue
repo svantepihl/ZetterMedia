@@ -90,5 +90,9 @@ body {
 	max-height: 1000px;
 }
 
+#services {
+	font-family: archivo_blackregular;
+}
+
 
 </style>
