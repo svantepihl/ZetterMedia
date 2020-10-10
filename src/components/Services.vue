@@ -1,8 +1,8 @@
 <template>
-    <div id="services" class="h-auto min-h-screen w-screen relative bg-gray-100 z-30 justify-items-center items-center">
+    <div id="services" class="size-min-max h-auto w-screen relative bg-gray-100 z-30 justify-items-center items-center">
         <div class="mx-0 h-full w-full items-center flex justify-items-center">
             <transition name="fade">
-				<div v-if="showServices" class="m-0 p-0 w-screen h-screen">
+				<div v-if="showServices" class="m-0 p-0 w-screen h-min-screen h-auto">
 					<div class="grid-container">
 						<div class="ContentArea">
 							<Selectors></Selectors>
@@ -36,7 +36,7 @@
 		computed: mapState(['currentStep','serviceNeeded','serviceType']),
 		data () {
 			return {
-			showServices: false,
+			showServices: true,
 			scrollPos: null
 			}
 		},
@@ -65,9 +65,10 @@ body {
 
 .grid-container {
   display: grid;
-  height: 100vh;
+  height: 100%;
+  min-height: 100vh;
   grid-template-columns: 1fr;
-  grid-template-rows: 2fr 10fr 3fr 50px;
+  grid-template-rows: 1fr 10fr 1.5fr 0.4fr;
   gap: 10px 0px;
   grid-template-areas:
     "."
@@ -83,6 +84,11 @@ body {
 .NavigationArea { grid-area: NavigationArea; }
 
 .ProgressBar { grid-area: ProgressBar; }
+
+.size-min-max {
+	min-height: 100vh;
+	max-height: 1000px;
+}
 
 
 </style>

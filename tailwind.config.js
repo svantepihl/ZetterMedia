@@ -9,11 +9,29 @@ module.exports = {
     './src/**/*.jsx',
   ],
   theme: {
-    fontFamily: {
-      display: ['nunito-sans', 'sans-serif'],
-      body: ['nunito-sans', 'sans-serif'],
+    screens: {
+      'portrait': {'raw': '(orientation: portrait)'},
+      // => @media (orientation: portrait) { ... }
+      'landscape': {'raw': '(orientation: landscape)'},
+      // => @media (orientation: portrait) { ... }
+      'xs': '364px',
+      // => @media (min-width: 375px) { ... }
+      'sm': '640px',
+      // => @media (min-width: 640px) { ... }
+
+      'md': '768px',
+      // => @media (min-width: 768px) { ... }
+
+      'lg': '1024px',
+      // => @media (min-width: 1024px) { ... }
+
+      'xl': '1366px',
+      // => @media (min-width: 1280px) { ... }
     },
     extend: {
+      colors: {
+        orange: '#f89f67',
+      },
       transformOrigin: {
         "0": "0%",
       },

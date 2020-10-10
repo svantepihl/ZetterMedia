@@ -1,15 +1,16 @@
 <template>
-<div class=" relative h-screen w-screen z-0 font-sans" id="video-container">
-    <video autoplay muted loop class=" fixed h-full w-full z-0 p-0 m-0 object-fill">
+<div class=" relative h-screen w-screen z-0" id="video-container">
+    <video autoplay playsinline muted loop class=" fixed h-full w-full z-0 p-0 m-0 object-cover pointer-events-none">
+        <source src="../assets/video/bg.webm" type="video/wemb">
         <source src="../assets/video/bg.mp4" type="video/mp4">
     </video>
     
-    <div id="overlay" class="fixed flex h-screen w-screen z-40">
-    <div class="m-auto text-white text-4xl">
-        <vue-typed-js :strings="['FIRST TEXT', 'SECOND TEXT']">
-            <h1 class="typing"></h1>
-        </vue-typed-js>
-    </div>
+    <div id="overlay" class="flex fixed h-screen w-screen z-40">
+        <div class="circle m-auto">
+            <vue-typed-js class="w-full h-full flex content-start items-start mt-4 xs:mt-10" :showCursor="false" :typeSpeed="85" :strings="['<p><strong>ZETTER MEDIA</strong><br> är en contentbyrå som fokuserar på att skapa effektfullt innehåll.^600 Från film och ljud^400 till webb och design^500 skapar vi content att dela med världen.</p>']" :contentType="'html'">
+                <span class="typing w-full h-56 mx-3"></span>
+            </vue-typed-js>
+        </div>
     </div>
     
     <a href="#services" v-smooth-scroll>
@@ -46,6 +47,10 @@
     -webkit-transform-origin: center left;
     transform-origin: center left;
     left: 5px;
+}
+
+#center-logo {
+    margin-left: 10%;
 }
 
 </style>

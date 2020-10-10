@@ -14,7 +14,6 @@
     "gridsome": "^0.7.21",
     "gridsome-plugin-netlify-cms": "^1.0.9",
     "netlify-cms": "^2.10.61",
-    "typeface-nunito-sans": "0.0.72",
     "vue-typed-js": "^0.1.2",
     "vue2-animate": "^2.1.4",
     "vue2-smooth-scroll": "^1.5.0",

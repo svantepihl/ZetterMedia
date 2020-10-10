@@ -5,7 +5,7 @@
 			enter-active-class="slideInRight"
 			leave-active-class="slideOutRight"
 			>
-			<div v-if="showMenu" class="fixed flex content-center justify-center h-screen w-screen sm:hidden m-0 p-0 bg-red-600 z-20 text-white overflow-hidden">
+			<div v-if="showMenu" class="fixed flex content-center justify-center h-screen w-screen sm:hidden m-0 p-0 bg-orange z-20 text-white overflow-hidden">
 					<ul class="text-4xl list-style-none align-middle content-center justify-center flex flex-col text-center">
 						<a class="text-white m-0 p-0 hover:bold" href="#">
 							<li>Jobb</li>
@@ -41,7 +41,7 @@
 				</button>
 			</div>
 
-			<div class="hidden flex-grow sm:flex items-center w-auto pt-0" id="nav-content">
+			<div class="hidden flex-grow sm:flex items-center w-auto pt-0 text-4xl" id="nav-content">
 				<ul id="menu" class="hidden list-reset sm:flex justify-end flex-1 items-center w-auto text-xs">
 					<li class="spin ml-4">
 						<a class="text-white m-0 p-0" href="#">
@@ -114,6 +114,7 @@
 
 p {
 	display: inline-block;
+	@apply text-lg;
 }
 
 span {

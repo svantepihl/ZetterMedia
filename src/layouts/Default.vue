@@ -1,5 +1,5 @@
 <template>
-	<div class="w-screen h-screen m-0 p-0">
+	<div class="w-screen min-h-screen m-0 p-0">
 		<Navbar></Navbar>
 		<div id="body-container">
 			<Video></Video>
@@ -19,9 +19,9 @@
 </script>
 
 <style>
-body{
+  body{
 	scroll-behavior: smooth !important;
+	font-family: steelfishregular;
 }
-
-
 </style>
+

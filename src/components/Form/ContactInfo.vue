@@ -21,8 +21,10 @@
 </template>
 
 <script>
+import { mapState } from 'vuex';
 export default {
-    name: "ContactInfo"
+    name: "ContactInfo",
+    computed: mapState(['currentStep'])
 }
 </script>
 
