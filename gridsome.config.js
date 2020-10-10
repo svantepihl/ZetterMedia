@@ -3,11 +3,7 @@
 
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
-class TailwindExtractor {
-  static extract(content) {
-    return content.match(/[A-Za-z0-9-_:\/]+/g) || []
-  }
-}
+
 
 module.exports = {
   siteName: 'ZetterMedia',

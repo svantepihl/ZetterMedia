@@ -1,6 +1,7 @@
 // This is the main.js file. Import global CSS and scripts here.
 // The Client API can be used here. Learn more: gridsome.org/docs/client-api
 require('vue2-animate/dist/vue2-animate.min.css')
+require("./assets/css/main.css")
 
 import DefaultLayout from '~/layouts/Default.vue'
 import vueSmoothScroll from 'vue2-smooth-scroll'

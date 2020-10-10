@@ -171,8 +171,8 @@
 
   @font-face {
     font-family: 'steelfishregular';
-    src: url('../../src/assets/font/steelfish_rg-webfont.woff2') format('woff2'),
-          url('../../src/assets/font/steelfish_rg-webfont.woff') format('woff');
+    src: url('../font/steelfish_rg-webfont.woff2') format('woff2'),
+          url('../font/steelfish_rg-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
   }
