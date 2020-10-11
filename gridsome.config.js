@@ -6,10 +6,10 @@
 
 
 module.exports = {
-  siteName: 'ZetterMedia',
-  siteDescription: "INFO OM ZETTERMEDIA",
+  siteName: 'Zetter Media',
+  siteDescription: "ZETTER MEDIA",
   siteUrl: 'https://zettermedia.se',
-  titleTemplate: `%s | ZetterMedia AB`,
+  titleTemplate: `%s | Zetter Media`,
   transformers: {
     remark: {
       externalLinksTarget: '_blank',
