@@ -7,7 +7,7 @@
     
     <div id="overlay" class="flex fixed h-screen w-screen z-40">
         <div class="circle m-auto">
-            <vue-typed-js class="w-full h-full flex m-auto" :showCursor="false" :typeSpeed="85" :strings="['<p><strong>ZETTER MEDIA</strong><br> är en contentbyrå som fokuserar på att skapa effektfullt innehåll.^600 Från film och ljud^400 till webb och design^500 skapar vi content att dela med världen.</p>']" :contentType="'html'">
+            <vue-typed-js class="w-full h-full flex m-auto px-1" :showCursor="false" :typeSpeed="30" :strings="['<p><strong>ZETTER MEDIA</strong><br> är en contentbyrå som fokuserar på att skapa effektfullt innehåll.^600 Från film och ljud^300 till webb och design^400 skapar vi content^200 att dela med världen.</p>']" :contentType="'html'">
                 <span class="typing w-full h-56 mx-3"></span>
             </vue-typed-js>
         </div>
@@ -39,7 +39,7 @@
     font-size: 11px;
     line-height: 11px;
     font-weight: 400;
-    letter-spacing: 0.19em;
+    letter-spacing: 0.3em;
     padding-bottom: 33px;
 }
 
