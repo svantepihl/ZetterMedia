@@ -27,6 +27,8 @@ module.exports = {
 
       'xl': '1366px',
       // => @media (min-width: 1280px) { ... }
+      'xxl': '1600px',
+      // => @media (min-width: 1280px) { ... }
     },
     extend: {
       colors: {

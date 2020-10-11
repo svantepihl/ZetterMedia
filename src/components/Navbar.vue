@@ -41,7 +41,7 @@
 				</button>
 			</div>
 
-			<div class="hidden flex-grow sm:flex items-center w-auto pt-0 text-4xl" id="nav-content">
+			<div class="hidden flex-grow sm:flex items-center w-auto pt-0 text-4xl lg:text-5xl" id="nav-content">
 				<ul id="menu" class="hidden list-reset sm:flex justify-end flex-1 items-center w-auto text-xs">
 					<li class="spin ml-4">
 						<a class="text-white m-0 p-0" href="#">
