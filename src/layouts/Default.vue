@@ -3,6 +3,7 @@
 		<Navbar></Navbar>
 		<div id="body-container">
 			<Video></Video>
+			<!-- <AboutUs></AboutUs> -->
 			<Services></Services>
 		</div>		
 	</div>
@@ -12,9 +13,10 @@
 	import Navbar from '../components/Navbar.vue';
 	import Video from '../components/Video.vue';
 	import Services from '../components/Services.vue'
+	import AboutUs from '../components/AboutUs.vue';
 
   	export default {
-		components: {Navbar,Video,Services},
+		components: {Navbar,Video,Services,AboutUs},
 	}
 </script>
 

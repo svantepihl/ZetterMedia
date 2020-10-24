@@ -2,23 +2,46 @@
 
 @tailwind components;
 
+.invert {
+  -webkit-filter: brightness(0) invert(100%); /* safari 6.0 - 9.0 */
+          filter: brightness(0) invert(100%);
+}
+
 .button-base {
   @apply bg-transparent;
   @apply font-semibold;
-  @apply border;
-  @apply border-gray-400;
-  @apply rounded;
+  @apply border-4;
+  @apply border-white;
+  @apply text-white;
+  border-radius: 1rem;
   height: 7rem;
   width: 7rem;
   font-size: 10px;
   @apply mx-2;
   margin-top: 9px;
+  transition: all .5s;
 }
 
-.button-base:hover {
-@apply border-2;
-@apply border-orange;
+
+
+.button-base img{
+  transition: all .3s;
+  @apply mb-1
 }
+
+.button-base img {
+  @apply w-3/6;
+}
+
+.button-base:active {
+  @apply border-8;
+  @apply text-transparent
+}
+
+.button-base:active img {
+  @apply w-4/6;
+}
+
 
 @screen xs {
     .button-base{
@@ -48,140 +71,27 @@
     @apply mx-5;
     @apply my-5;
   }
+
+  .button-base:hover {
+    @apply border-8;
+    @apply text-transparent
+    }
+
+  .button-base:hover img {
+    @apply w-4/6;
+  }
 }
 
 @screen xl {
   .button-base{
-    height: 14rem;
-    width: 14rem;
-    font-size: 16px;
+    height: 16rem;
+    width: 16rem;
+    font-size: 18px;
     @apply mx-5;
     @apply my-5;
   }
 }
 
-
-.circle{
-  @apply hidden;
-}
-
-@screen xs {
-  .circle {
-    display: flex;
-    position: relative;
-    display: block;
-    width: 70%;
-    height: 0;
-    padding: 35% 0;
-    border-radius: 50%;
-    
-    /* Just making it pretty */
-    @shadow: rgba(0, 0, 0, .1);
-    background: #00000049;
-    border-color: gray;
-    border: 10px;
-    color: white;
-    text-align: center;
-    @apply text-2xl
-  }
-}
-
-@screen sm {
-  .circle {
-    @apply hidden;
-  }
-}
-
-@screen md {
-  .circle {
-    display: flex;
-    position: relative;
-    display: block;
-    width: 44%;
-    height: 0;
-    padding: 22% 0;
-    border-radius: 50%;
-    
-    /* Just making it pretty */
-    @shadow: rgba(0, 0, 0, .1);
-    background: #00000049;
-    border-color: gray;
-    border: 10px;
-    color: white;
-    text-align: center;
-    @apply text-2xl
-  }
-}
-
-@screen lg {
-  .circle {
-    display: flex;
-    position: relative;
-    display: block;
-    width: 30%;
-    height: 0;
-    padding: 15% 0;
-    border-radius: 50%;
-    
-    /* Just making it pretty */
-    @shadow: rgba(0, 0, 0, .1);
-    background: #00000049;
-    border-color: gray;
-    border: 10px;
-    color: white;
-    text-align: center;
-    @apply text-3xl
-  }
-} 
-
-@screen xl {
-  .circle {
-    display: flex;
-    position: relative;
-    display: block;
-    width: 24%;
-    height: 0;
-    padding: 12% 0;
-    border-radius: 50%;
-    
-    /* Just making it pretty */
-    @shadow: rgba(0, 0, 0, .1);
-    background: #00000049;
-    border-color: gray;
-    border: 10px;
-    color: white;
-    text-align: center;
-    font-size: 2rem;
-  }
-}
-
-@screen xxl {
-  .circle {
-    display: flex;
-    position: relative;
-    display: block;
-    width: 20%;
-    height: 0;
-    padding: 10% 0;
-    border-radius: 50%;
-    
-    /* Just making it pretty */
-    @shadow: rgba(0, 0, 0, .1);
-    background: #00000049;
-    border-color: gray;
-    border: 10px;
-    color: white;
-    text-align: center;
-    font-size: 2rem;
-  }
-
-}
-
-@media (max-height: 414px) {
-  .circle {
-    @apply hidden;
-  }
-}
 
 
 @tailwind utilities;

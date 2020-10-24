@@ -1,6 +1,6 @@
 <template>
-    <div id="services" class="size-min-max h-auto w-screen relative bg-gray-100 z-30 justify-items-center items-center">
-        <div class="mx-0 h-full w-full items-center flex justify-items-center">
+    <div id="services" class="size-min-max h-auto w-screen relative bg-orange z-30 justify-items-center items-center">
+        <div class="mx-0 h-full w-full min-h-screen items-center flex justify-items-center">
             <transition name="fade">
 				<div v-if="showServices" class="m-0 p-0 w-screen h-min-screen h-auto">
 					<div class="grid-container">
@@ -66,6 +66,7 @@ body {
 .grid-container {
   display: grid;
   height: 100%;
+  min-height: auto;
   min-height: 100vh;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 10fr 1.5fr 0.4fr;

@@ -39,7 +39,8 @@ export default function (Vue, {router, appOptions}) {
       tel: "",
       budget: 0,
       serviceNeeded: "",
-      serviceType: ""
+      serviceType: "",
+      desc: ""
     },
     mutations: {
       next (state) {
