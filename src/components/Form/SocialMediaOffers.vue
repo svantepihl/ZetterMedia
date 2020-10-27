@@ -1,5 +1,5 @@
 <template>
-    <div class="flex justify-items-center place-content-start items-center sm:mt-5 h-full w-full text-xs sm:text-lg flex-col lg:mt-24">
+    <div class="flex justify-items-center place-content-start items-center sm:mt-5 h-full w-full text-xs sm:text-lg flex-col lg:mt-4">
         <div class="flex button-row xs:mt-4">
             <button v-on:click="$store.commit('selectServiceType','photo')" class="button-base xs:button-xs hover:button-hover">
                 <img src="../../assets/icons/social-media-marketing.svg" class="mx-auto invert">

@@ -4,6 +4,8 @@
 		<div id="body-container">
 			<Video></Video>
 			<!-- <AboutUs></AboutUs> -->
+			<Form></Form>
+			<Portfolio></Portfolio>
 			<Services></Services>
 		</div>		
 	</div>
@@ -12,11 +14,13 @@
 <script>
 	import Navbar from '../components/Navbar.vue';
 	import Video from '../components/Video.vue';
-	import Services from '../components/Services.vue'
+	import Form from '../components/Form.vue'
 	import AboutUs from '../components/AboutUs.vue';
+	import Services from '../components/Services.vue'
+	import Portfolio from '../components/Portfolio.vue'
 
   	export default {
-		components: {Navbar,Video,Services,AboutUs},
+		components: {Navbar,Video,Form,AboutUs,Services,Portfolio},
 	}
 </script>
 

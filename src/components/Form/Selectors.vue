@@ -7,8 +7,8 @@
                 <span id="2" v-else-if="currentStep == 1 && serviceNeeded == 'stream'">Välj streaming paket:</span>
                 <span id="2" v-else-if="currentStep == 1 && serviceNeeded == 'audio'">Vilken typ?</span>
                 <span id="2" v-else-if="currentStep == 1 && serviceNeeded == 'social'">Vilken typ?</span>
-
-                <span id="2" v-else-if="currentStep == 2">Kontaktuppgifter</span>
+                <span id="2" v-else-if="currentStep == 2">Budget?</span>
+                <span id="2" v-else-if="currentStep == 3">Kontaktuppgifter</span>
             </h1>
 
             <ServiceOffers v-if="currentStep == 0"></ServiceOffers>
@@ -17,8 +17,9 @@
             <AudioOffers v-else-if="currentStep == 1 && serviceNeeded == 'audio'"></AudioOffers>
             <StreamingOffers v-else-if="currentStep == 1 && serviceNeeded == 'stream'"></StreamingOffers>
             <SocialMediaOffers v-else-if="currentStep == 1 && serviceNeeded == 'social'" ></SocialMediaOffers>
+            <Budget v-else-if="currentStep == 2"></Budget>
 
-            <ContactInfo v-else-if="currentStep == 2"> </ContactInfo>
+            <ContactInfo v-else-if="currentStep == 3"> </ContactInfo>
     </div>
 </template>
 
@@ -30,11 +31,12 @@ import ContactInfo from '../Form/ContactInfo'
 import AudioOffers from '../Form/AudioOffers'
 import StreamingOffers from '../Form/StreamingOffers'
 import SocialMediaOffers from '../Form/SocialMediaOffers'
+import Budget from '../Form/Budget'
 
 export default {
     name: "Offers",
     computed: mapState(['serviceNeeded','currentStep']),
-    components: {VideoOffers,ServiceOffers,ContactInfo, AudioOffers,StreamingOffers,SocialMediaOffers}
+    components: {VideoOffers,ServiceOffers,ContactInfo, AudioOffers,StreamingOffers,SocialMediaOffers,Budget}
 }
 </script>
 
