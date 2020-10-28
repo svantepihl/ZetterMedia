@@ -7,6 +7,8 @@ import DefaultLayout from '~/layouts/Default.vue'
 import vueSmoothScroll from 'vue2-smooth-scroll'
 import VueTypedJs from 'vue-typed-js'
 import Vuex from 'vuex'
+import axios from 'axios'
+import VueAxios from 'vue-axios'
 
 // FONT AWESOME
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
@@ -25,6 +27,7 @@ export default function (Vue, {router, appOptions}) {
   Vue.use(vueSmoothScroll, {duration:2000})
   Vue.component('font-awesome', FontAwesomeIcon)
   Vue.use(VueTypedJs)
+  Vue.use(VueAxios, axios)
 
   router: {
     mode: 'history'
