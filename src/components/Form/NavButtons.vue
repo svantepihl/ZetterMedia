@@ -8,7 +8,7 @@
             Fortsätt
         </button>
 
-        <button v-on:click="$store.commit('sendForm')" v-if="currentStep == 4"  class="nav-button hover:button-hover">
+        <button v-on:click="submit" v-if="currentStep == 4"  class="nav-button hover:button-hover">
             Skicka!
         </button>
     </div>
@@ -18,7 +18,23 @@
 import { mapState } from 'vuex';
 export default {
     name: "NavButtons",
-    computed: mapState(['currentStep','servicesNeeded'])
+    computed: mapState(['currentStep','servicesNeeded']),
+    methods: {
+    async submit() {
+        try {
+            await this.$axios.post(
+            '/.netlify/functions/sendgrid',
+            {
+                message: 'My email message, in the real world this would probably come from form data '
+            }
+            )
+            alert('Thank you, your message was sent successfully!')
+        } catch (e) {
+            console.error(e)
+            alert('Error:  Your message could not be sent')
+        }
+    }
+}
 
 }
 </script>
