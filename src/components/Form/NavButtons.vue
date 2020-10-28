@@ -16,13 +16,15 @@
 
 <script>
 import { mapState } from 'vuex';
+import axios from 'axios'
+import VueAxios from 'vue-axios'
 export default {
     name: "NavButtons",
     computed: mapState(['currentStep','servicesNeeded']),
     methods: {
     async submit() {
         try {
-            await this.$axios.post(
+            await axios.post(
             '/.netlify/functions/sendgrid',
             {
                 message: 'My email message, in the real world this would probably come from form data '
