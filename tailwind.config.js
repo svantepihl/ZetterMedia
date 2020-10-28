@@ -1,7 +1,7 @@
 module.exports = {
   future: {
     purgeLayersByDefault: true,
-    emoveDeprecatedGapUtilities: true
+    removeDeprecatedGapUtilities: true
   },
   purge: [
     './src/**/*.html',
@@ -14,11 +14,10 @@ module.exports = {
       // => @media (orientation: portrait) { ... }
       'landscape': {'raw': '(orientation: landscape)'},
       // => @media (orientation: portrait) { ... }
-      'xs': '364px',
+      'xs': '375px',
       // => @media (min-width: 375px) { ... }
       'sm': '640px',
       // => @media (min-width: 640px) { ... }
-
       'md': '768px',
       // => @media (min-width: 768px) { ... }
 
@@ -31,6 +30,9 @@ module.exports = {
       // => @media (min-width: 1280px) { ... }
     },
     extend: {
+      fontSize: {
+        'xxs' : '0.6rem'
+      },
       colors: {
         orange: '#f89f67',
       },

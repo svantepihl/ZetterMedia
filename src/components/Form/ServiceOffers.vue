@@ -1,37 +1,37 @@
 <template>
-    <div class="flex justify-items-center place-content-start items-center sm:mt-5 h-full w-full text-xs sm:text-lg flex-col lg:mt-24">
-        <div class="flex button-row">
-                <button v-bind:class="{ 'boder-2' : serviceNeeded == 'audio', 'border-orange' : serviceNeeded == 'audio' }" v-on:click="$store.commit('selectService', 'audio')" class="button-base">
-                    <font-awesome :icon="['fas', 'volume-up']" size="2x"/> <br>
+    <div class="flex justify-items-center place-content-start items-center h-full w-full text-xs sm:text-lg flex-col lg:mt-4">
+        <div class="flex button-row xs:mt-4">
+                <button v-on:click="$store.commit('selectService', 'audio')" class="button-base">
+                    <img src="../../assets/icons/sound-waves.svg" class="mx-auto invert">
                     Ljudproduktion
                 </button>
 
-                <button v-bind:class="{ 'boder-2' : serviceNeeded == 'video', 'border-orange' : serviceNeeded == 'video' }" v-on:click="$store.commit('selectService', 'video')" class="button-base xs:button-xs hover:button-hover">
-                    <font-awesome :icon="['fas', 'video']" size="2x"/> <br>
+                <button v-on:click="$store.commit('selectService', 'video')" class="button-base">
+                    <img src="../../assets/icons/video-camera-with-play-button.svg" class="mx-auto invert">
                     Videoproduktion
                 </button>
 
-                <button v-bind:class="{ 'boder-2' : serviceNeeded == 'stream', 'border-orange' : serviceNeeded == 'stream' }" v-on:click="$store.commit('selectService','stream')" class="button-base xs:button-xs hover:button-hover hidden lg:block landscape:block">
-                    <font-awesome :icon="['fas', 'rss']" size="2x" /> <br>
+                <button v-on:click="$store.commit('selectService','stream')" class="button-base xs:button-xs hover:button-hover hidden lg:block landscape:block">
+                    <img src="../../assets/icons/live-streaming.svg" class="mx-auto invert">
                     Streaming <br>
                 </button>
         </div>
 
-        <div class="flex button-row">
-                <button v-bind:class="{ 'boder-2' : serviceNeeded == 'social', 'border-orange' : serviceNeeded == 'social' }" v-on:click="$store.commit('selectService','social')" class="button-base xs:button-xs hover:button-hover">
-                    <font-awesome :icon="['fas', 'hashtag']" size="2x"/> <br>
+        <div class="flex button-row xs:mt-4">
+                <button v-on:click="$store.commit('selectService','social')" class="button-base xs:button-xs hover:button-hover">
+                    <img src="../../assets/icons/social-media-marketing.svg" class="mx-auto invert">
                     Social Media
                 </button>
 
-                <button v-bind:class="{ 'boder-2' : serviceNeeded == 'web', 'border-orange' : serviceNeeded == 'web' }" v-on:click="$store.commit('selectService','web')" class="button-base xs:button-xs hover:button-hover">
-                    <font-awesome :icon="['fas', 'sitemap']" size="2x" /> <br>
+                <button v-on:click="$store.commit('selectService','web')" class="button-base xs:button-xs hover:button-hover">
+                    <img src="../../assets/icons/globe.svg" class="mx-auto invert">
                     Webb + SEO <br>
                 </button>
         </div>
 
-        <div class="flex button-row">
-                <button v-bind:class="{ 'boder-2' : serviceNeeded == 'stream', 'border-orange' : serviceNeeded == 'stream' }" v-on:click="$store.commit('selectService','stream')" class="button-base xs:button-xs hover:button-hover landscape:hidden lg:hidden">
-                    <font-awesome :icon="['fas', 'rss']" size="2x" /> <br>
+        <div class="flex button-row xs:mt-4">
+                <button v-on:click="$store.commit('selectService','stream')" class="button-base xs:button-xs hover:button-hover landscape:hidden lg:hidden">
+                    <img src="../../assets/icons/live-streaming.svg" class="mx-auto invert">
                     Streaming <br>
                 </button>
         </div>

@@ -53,4 +53,125 @@
     margin-left: 10%;
 }
 
+.circle{
+  @apply hidden;
+}
+
+@screen xs {
+  .circle {
+    display: flex;
+    position: relative;
+    display: block;
+    width: 70%;
+    height: 0;
+    padding: 35% 0;
+    border-radius: 50%;
+    
+    /* Just making it pretty */
+    @shadow: rgba(0, 0, 0, .1);
+    background: #00000049;
+    border-color: gray;
+    border: 10px;
+    color: white;
+    text-align: center;
+    @apply text-2xl
+  }
+}
+
+@screen sm {
+  .circle {
+    @apply hidden;
+  }
+}
+
+@screen md {
+  .circle {
+    display: flex;
+    position: relative;
+    display: block;
+    width: 44%;
+    height: 0;
+    padding: 22% 0;
+    border-radius: 50%;
+    
+    /* Just making it pretty */
+    @shadow: rgba(0, 0, 0, .1);
+    background: #00000049;
+    border-color: gray;
+    border: 10px;
+    color: white;
+    text-align: center;
+    @apply text-2xl
+  }
+}
+
+@screen lg {
+  .circle {
+    display: flex;
+    position: relative;
+    display: block;
+    width: 30%;
+    height: 0;
+    padding: 15% 0;
+    border-radius: 50%;
+    
+    /* Just making it pretty */
+    @shadow: rgba(0, 0, 0, .1);
+    background: #00000049;
+    border-color: gray;
+    border: 10px;
+    color: white;
+    text-align: center;
+    @apply text-3xl
+  }
+} 
+
+@screen xl {
+  .circle {
+    display: flex;
+    position: relative;
+    display: block;
+    width: 24%;
+    height: 0;
+    padding: 12% 0;
+    border-radius: 50%;
+    
+    /* Just making it pretty */
+    @shadow: rgba(0, 0, 0, .1);
+    background: #00000049;
+    border-color: gray;
+    border: 10px;
+    color: white;
+    text-align: center;
+    font-size: 1.8rem;
+  }
+}
+
+@screen xxl {
+  .circle {
+    display: flex;
+    position: relative;
+    display: block;
+    width: 20%;
+    height: 0;
+    padding: 10% 0;
+    border-radius: 50%;
+    
+    /* Just making it pretty */
+    @shadow: rgba(0, 0, 0, .1);
+    background: #00000049;
+    border-color: gray;
+    border: 10px;
+    color: white;
+    text-align: center;
+    font-size: 1.95rem;
+  }
+}
+
+@media (max-height: 414px) {
+  .circle {
+    @apply hidden;
+  }
+}
+
 </style>
