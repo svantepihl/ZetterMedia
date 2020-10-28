@@ -1,7 +1,7 @@
 module.exports = {
   future: {
     purgeLayersByDefault: true,
-    emoveDeprecatedGapUtilities: true
+    removeDeprecatedGapUtilities: true
   },
   purge: [
     './src/**/*.html',

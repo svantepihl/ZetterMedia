@@ -17,7 +17,7 @@ export default {
 <style>
 
 #bar{
-    transition: width 1.5s
+    transition: width 1s
 }
 
 </style>

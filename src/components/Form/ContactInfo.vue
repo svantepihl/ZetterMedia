@@ -1,13 +1,12 @@
 <template>
-
-    <form class="max-w-md mx-auto overflow-hidden p-6 space-y-10 text-2xl mt-10">
+    <form class="max-w-md mx-auto overflow-hidden p-6 space-y-10 text-2xl text-white mt-24">
     <div class="relative border-b-2 focus-within:border-blue-500">
-    <input v-model="name" type="text" name="namn" placeholder=" " class="block w-full appearance-none focus:outline-none bg-transparent" />
-    <label for="namn" class="absolute top-0 -z-1 duration-300 origin-0">Namn</label>
+    <input v-model="name" type="text" id="name" name="name" placeholder=" " class="block w-full appearance-none focus:outline-none bg-transparent" />
+    <label for="name" class="absolute top-0 -z-0 duration-300 origin-0">Namn</label>
     </div>
     <div class="relative border-b-2 focus-within:border-blue-500">
-    <input v-model="email" type="text" name="email" placeholder=" " class="block w-full appearance-none focus:outline-none bg-transparent" />
-    <label for="email" class="absolute top-0 -z-1 duration-300 origin-0">Email</label>
+    <input v-model="email" type="text" id="email" name="email" placeholder=" " class="block w-full appearance-none focus:outline-none bg-transparent" />
+    <label for="email" class="absolute top-0 -z-0 duration-300 origin-0">Email</label>
     </div>
 
 
@@ -24,7 +23,30 @@
 import { mapState } from 'vuex';
 export default {
     name: "ContactInfo",
-    computed: mapState(['currentStep'])
+    computed: 
+    {
+        name: {
+            get () {
+                return this.$store.state.name
+            },
+            set (value) {
+                this.$store.commit('updateName', value)
+            }
+        },
+        email: {
+            get () {
+                return this.$store.state.email
+            },
+            set (value) {
+                this.$store.commit('updateEmail', value)
+            }
+        },
+        currentStep: {
+          get () {
+            return this.$store.state.currentStep
+          }
+        } 
+    }
 }
 </script>
 
@@ -35,10 +57,6 @@ input:not(:placeholder-shown) ~ label {
   @apply transform; 
   @apply scale-75; 
   @apply -translate-y-8;
-}
-
-input:focus-within ~ label {
-  @apply text-gray-600;
 }
 
 </style>> 
