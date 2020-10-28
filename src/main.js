@@ -33,13 +33,15 @@ export default function (Vue, {router, appOptions}) {
   Vue.use(Vuex)
 
   appOptions.store = new Vuex.Store({
+    strict: true,
     state: {
       currentStep: 0,
       email: "",
       tel: "",
       budget: 0,
       serviceNeeded: "",
-      serviceType: ""
+      serviceType: "",
+      desc: ""
     },
     mutations: {
       next (state) {
@@ -55,6 +57,15 @@ export default function (Vue, {router, appOptions}) {
       selectServiceType (state, s) {
         state.serviceType = s;
         state.currentStep++;
+      },
+      updateDesc (state, s) {
+        state.desc = s;
+      },
+      updateName (state, s) {
+        state.desc = s;
+      },
+      updateEmail (state, s) {
+        state.desc = s;
       }
     }
   })
