@@ -8,7 +8,7 @@ function sendEmail(client, message, senderEmail, senderName) {
         name: senderName
       },
       subject: 'Netlify Function - Sendgrid Email',
-      to: 'hej@svantepihl.com',
+      to: 'karl.svante.pihl@gmail.com',
       html: `Hey, you\'ve sent an email from Netlify Functions<br/>Message: ${message}`
     }
 
