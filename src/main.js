@@ -7,7 +7,8 @@ import DefaultLayout from '~/layouts/Default.vue'
 import vueSmoothScroll from 'vue2-smooth-scroll'
 import VueTypedJs from 'vue-typed-js'
 import Vuex from 'vuex'
-
+import axios from 'axios'
+import VueAxios from 'vue-axios'
 
 // FONT AWESOME
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
@@ -25,7 +26,7 @@ export default function (Vue, {router, appOptions}) {
   Vue.component('Layout', DefaultLayout)
   Vue.use(vueSmoothScroll, {duration:2000})
   Vue.component('font-awesome', FontAwesomeIcon)
-  Vue.use(VueTypedJs)
+  Vue.use(VueTypedJs, VueAxios, axios)
 
   router: {
     mode: 'history'
@@ -37,9 +38,10 @@ export default function (Vue, {router, appOptions}) {
     strict: true,
     state: {
       currentStep: 0,
+      name: "",
       email: "",
       tel: "",
-      budget: 0,
+      budget: "",
       serviceNeeded: "",
       serviceType: "",
       desc: ""
@@ -59,14 +61,21 @@ export default function (Vue, {router, appOptions}) {
         state.serviceType = s;
         state.currentStep++;
       },
+      updateBudget (state, s) {
+        state.budget = s;
+        state.currentStep++;
+      },
       updateDesc (state, s) {
         state.desc = s;
       },
+      updatePhone (state, s) {
+        state.tel = s;
+      },
       updateName (state, s) {
-        state.desc = s;
+        state.name = s;
       },
       updateEmail (state, s) {
-        state.desc = s;
+        state.email = s;
       }
     }
   })

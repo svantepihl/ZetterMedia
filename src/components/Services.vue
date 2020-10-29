@@ -1,15 +1,15 @@
 <template>
-<div class="relative min-w-full w-screen min-h-screen h-auto bg-white">
-  <div class="grid grid-flow-row grid-cols-1 gap-4 sm:grid-cols-3 sm:gap-6 sm:px-8 sm:pt-40 sm:py w-min-full h-auto min-h-full">
-    <div class="service bg-red-500">1</div>
-    <div class="service bg-blue-500">2</div>
-    <div class="service bg-red-500">3</div>
-    <div class="service bg-blue-500">4</div>
-    <div class="service bg-red-500">5</div>
-    <div class="service bg-blue-500">6</div>
-    <div class="service bg-red-500">7</div>
-    <div class="service bg-blue-500">8</div>
-    <div class="service bg-red-500">9</div>
+<div class="relative min-w-screen w-screen min-h-screen h-auto bg-black z-30">
+  <div class="grid grid-cols-3 gap-y-5 gap-x-6 h-auto min-h-screen py-20 mx-20">
+    <div class="service bg-gray-600">1</div>
+    <div class="service bg-gray-500">2</div>
+    <div class="service bg-gray-600">3</div>
+    <div class="service bg-gray-500">4</div>
+    <div class="service bg-gray-600">5</div>
+    <div class="service bg-gray-500">6</div>
+    <div class="service bg-gray-600">7</div>
+    <div class="service bg-gray-500">8</div>
+    <div class="service bg-gray-600">9</div>
   </div>
 </div>
 
@@ -22,6 +22,12 @@ export default {
 </script>
 
 <style scoped>
-
+.service{
+  @apply h-auto;
+  @apply text-center;
+  @apply flex;
+  @apply align-middle;
+  @apply justify-center;
+}
 
 </style>
