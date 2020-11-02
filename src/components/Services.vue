@@ -2,7 +2,7 @@
 <div class="relative min-w-screen w-screen min-h-screen h-auto bg-green text-white z-40 pt-16 pb-8 md:pb-12 lg:pt-32">
   <h1 class="absolute right-0 top-0 mt-8 lg:mt-16 mr-3 lg:mr-6 text-3xl xs:text-3xl lg:text-5xl"> våra tjänster. </h1>
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 md:gap-x-20 gap-y-8 xs:gap-y-12 lg:gap-y-24 h-auto mx-4 xs:mx-8 lg:mx-24 my-10">
-    <div class="service lg:col-span-2" data-aos="fade-up">
+    <div class="service lg:col-span-2" >
       <h1 class="service-heading text-2xl lg:text-3xl">
         Film & rörligt
       </h1>
@@ -11,7 +11,7 @@
         Kom igång och skapa effektfulla filmproduktioner med våra kreativa filmskapare!
       </p>
     </div>
-    <div class="service lg:col-span-2" data-aos="fade-up">
+    <div class="service lg:col-span-2" >
       <h1 class="service-heading text-2xl lg:text-3xl">
         Ljuddesign
       </h1>
@@ -20,7 +20,7 @@
         Stick ut i mediabruset med kraftfull ljuddesign. Visst låter det bra? 
       </p>
     </div>
-    <div class="service lg:col-span-2" data-aos="fade-up">
+    <div class="service lg:col-span-2" >
       <h1 class="service-heading text-2xl lg:text-3xl">
         Podcast 
       </h1>
@@ -28,7 +28,7 @@
         Du har en röst och den förtjänar att höras. Vi hjälper er komma igång med er egen podcast.
       </p>
     </div>
-    <div class="service lg:col-span-2" data-aos="fade-up">
+    <div class="service lg:col-span-2" >
       <h1 class="service-heading text-2xl lg:text-3xl">
         Streaming 
       </h1>
@@ -37,7 +37,7 @@
         Möten, event eller konserter. Facebook, Youtube, Vimeo, Zoom eller Teams? Bara din fantasi sätter gränser. 
       </p>
     </div>
-    <div class="service lg:col-span-2" data-aos="fade-up">
+    <div class="service lg:col-span-2" >
       <h1 class="service-heading text-2xl lg:text-3xl">
         Social Media Content
       </h1>
@@ -46,7 +46,7 @@
         Låt oss ta hand om ditt innehåll från planering till publicering. #contentcreators
       </p>
     </div>
-    <div class="service lg:col-span-2" data-aos="fade-up">
+    <div class="service lg:col-span-2" >
       <h1 class="service-heading text-2xl lg:text-3xl">
         SEO + Webbanalys 
       </h1>
@@ -54,7 +54,7 @@
         Optimera din närvaro på internet med vår populära webbanalys och öka trafiken via google till din hemsida med riktad sökoptimering.
       </p>
     </div>
-    <div class="service lg:col-span-2 lg:col-start-2" data-aos="fade-up">
+    <div class="service lg:col-span-2 lg:col-start-2" >
       <h1 class="service-heading text-2xl lg:text-3xl">
         Hemsida
       </h1>
@@ -63,7 +63,7 @@
         Tips! Komplettera med vårt SEO-paket för att ge din hemsida en ordentlig boost.
       </p>
     </div>
-    <div class="service lg:col-span-2" data-aos="fade-up">
+    <div class="service lg:col-span-2" >
       <h1 class="service-heading text-2xl lg:text-3xl">
         Grafisk profil 
       </h1>

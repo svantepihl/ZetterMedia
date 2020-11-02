@@ -1,6 +1,6 @@
 <template>
     <div id="work-with-us" class="size-min-max h-auto w-screen relative bg-orange z-30 justify-items-center items-center">
-        <div class="mx-0 h-full w-full min-h-screen items-center flex justify-items-center" data-aos="fade-up">
+        <div class="mx-0 h-full w-full min-h-screen items-center flex justify-items-center">
             <transition name="fade">
 				<div v-if="showServices" class="m-0 p-0 w-screen h-min-screen h-auto">
 					<div class="grid-container">
