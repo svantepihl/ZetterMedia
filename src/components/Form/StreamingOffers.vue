@@ -1,10 +1,10 @@
 <template>
-    <div class="flex justify-items-center place-content-start xs:place-content-evenly items-center h-full w-full text-xs sm:text-lg flex-col">
+    <div class="flex justify-items-center place-content-start xs:place-content-evenly items-center h-full w-full text-xs sm:text-lg flex-col ">
         <!-- FÖRSTA RADEN -->
         <div class="flex button-row w-full">
 
                 <!-- SYNS HELA TIDEN -->
-                <button v-on:click="$store.commit('selectServiceType', 'small')" class="mx-auto text-button w-5/6 lg:w-1/3 h-auto">
+                <button v-on:click="$store.commit('selectServiceType', 'small')" class="mx-auto text-button w-5/6 lg:w-1/3 h-auto color-bg">
                     <div class="px-2">
                         <h1 class="text-base xs:text-lg md:text-2xl lg:text-4xl">Paket litet</h1>
                         <ul class="text-xxs xs:text-xs md:text-lg lg:text-2xl">
@@ -35,7 +35,7 @@
                 </button>
 
                 <!-- SYNS PÅ STORA SKÄRMAR -->
-                <button v-on:click="$store.commit('selectServiceType', 'large')" class="mx-auto text-button w-5/6 lg:w-1/3 h-auto hidden lg:block">
+                <button v-on:click="$store.commit('selectServiceType', 'large')" class="mx-auto text-button w-5/6 lg:w-1/3 h-auto hidden lg:block color-bg">
                     <div class="p-2">
                         <h1 class="lg:text-4xl ">Paket stort</h1>
                         <ul class="lg:text-2xl">
@@ -69,7 +69,7 @@
             <!-- ANDRA RADEN -->
             <!-- SYNS PÅ STORA SKÄRMAR -->
             <div class="flex button-row w-full h-auto mt-2 xs:m-0">
-                <button v-on:click="$store.commit('selectServiceType', 'offer')" class="mx-auto text-button w-5/6 lg:w-1/3 h-full hidden lg:block">
+                <button v-on:click="$store.commit('selectServiceType', 'offer')" class="mx-auto text-button w-5/6 lg:w-1/3 h-full hidden lg:block color-bg">
                 <div class="p-2">
                     <h1 class="lg:text-3xl">Offert</h1>
                     <ul class="lg:text-2xl">
@@ -162,6 +162,10 @@ export default {
 
 .text-button:hover{
     @apply border-8;
+}
+
+.color-bg {
+    
 }
 
 

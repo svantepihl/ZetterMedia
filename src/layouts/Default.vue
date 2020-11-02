@@ -4,9 +4,10 @@
 		<div id="body-container">
 			<Video></Video>
 			<!-- <AboutUs></AboutUs> -->
+			<Services></Services>
 			<Form></Form>
 			<Portfolio></Portfolio>
-			<Services></Services>
+			<Footer></Footer>
 		</div>		
 	</div>
 </template>
@@ -18,9 +19,10 @@
 	import AboutUs from '../components/AboutUs.vue';
 	import Services from '../components/Services.vue'
 	import Portfolio from '../components/Portfolio.vue'
+	import Footer from '../components/Footer.vue'
 
   	export default {
-		components: {Navbar,Video,Form,AboutUs,Services,Portfolio},
+		components: {Navbar,Video,Form,AboutUs,Services,Portfolio, Footer},
 	}
 </script>
 
@@ -41,9 +43,18 @@ font-style: normal;
     font-style: normal;
   }
 
+@font-face {
+	font-family: "AvantGarde-Medium";
+
+	src: url("../assets/font/ITCAvantGardeGothicMedium.woff") format("woff"),
+		url("../assets/font/ITCAvantGardeGothicMedium.woff2") format("woff2"); 
+	font-weight: normal;
+	font-style: normal;
+}
+
 body{
 	scroll-behavior: smooth !important;
-	font-family: steelfishregular;
+	font-family: AvantGarde-Medium;
 }
 
 

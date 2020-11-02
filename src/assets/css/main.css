@@ -25,12 +25,24 @@
 
 
 .button-base img{
-  transition: all .3s;
+  transition: all .6s;
   @apply mb-1
 }
 
 .button-base img {
   @apply w-3/6;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .button-base:hover {
+    @apply border-8;
+    @apply text-transparent
+    }
+  
+  .button-base:hover img {
+    @apply mt-8;
+    @apply w-4/6;
+  }
 }
 
 .button-base:active {
@@ -39,6 +51,7 @@
 }
 
 .button-base:active img {
+  @apply mt-8;
   @apply w-4/6;
 }
 
@@ -67,18 +80,9 @@
   .button-base{
     height: 13rem;
     width: 13rem;
-    font-size: 16px;
+    font-size: 18px;
     @apply mx-5;
     @apply my-5;
-  }
-
-  .button-base:hover {
-    @apply border-8;
-    @apply text-transparent
-    }
-
-  .button-base:hover img {
-    @apply w-4/6;
   }
 }
 
@@ -86,7 +90,7 @@
   .button-base{
     height: 16rem;
     width: 16rem;
-    font-size: 18px;
+    font-size: 24px;
     @apply mx-5;
     @apply my-5;
   }
@@ -110,6 +114,15 @@
     font-family: 'steelfishregular';
     src: url('../font/steelfish_rg-webfont.woff2') format('woff2'),
           url('../font/steelfish_rg-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "AvantGarde-Medium";
+  
+    src: url("../font/ITCAvantGardeGothicMedium.woff") format("woff"), /* Modern Browsers */
+      url("../font/ITCAvantGardeGothicMedium.woff2") format("woff2"); /* Modern Browsers */
     font-weight: normal;
     font-style: normal;
   }

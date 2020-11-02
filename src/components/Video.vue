@@ -5,17 +5,26 @@
         <source src="../assets/video/bg.mp4" type="video/mp4">
     </video>
     
-    <div id="overlay" class="flex fixed h-screen w-screen z-40">
-        <div class="circle m-auto">
-            <vue-typed-js class="w-full h-full flex m-auto px-1" :showCursor="false" :typeSpeed="20" :strings="['<p><strong>ZETTER MEDIA</strong><br> är en contentbyrå som fokuserar på att skapa effektfullt innehåll.^600 Från film och ljud^300 till webb och design^400 skapar vi content^200 att dela med världen.</p>']" :contentType="'html'">
+    <div id="overlay" class="flex fixed h-screen min-h-full w-screen z-40 items-center justify-center">
+      <div class="absolute text-container text-white">
+        <transition name="slideUp"> 
+          <p><strong>ZETTER MEDIA</strong><br> är en contentbyrå som fokuserar på att skapa effektfullt innehåll. Från film och ljud till webb och design skapar vi content att dela med världen.</p>
+        </transition>      
+      </div>
+       <div class='octagon'>
+        <div class='inner'>
+        </div>
+      </div>
+<!--         <div class="circle m-auto">
+            <vue-typed-js class="w-full h-full flex m-auto px-1" :showCursor="false" :typeSpeed="0.01" :strings="['<p><strong>ZETTER MEDIA</strong><br> är en contentbyrå som fokuserar på att skapa effektfullt innehåll.^600 Från film och ljud^300 till webb och design^400 skapar vi content^200 att dela med världen.</p>']" :contentType="'html'">
                 <span class="typing w-full h-56 mx-3"></span>
             </vue-typed-js>
-        </div>
+        </div> -->
     </div>
     
     <a href="#services" v-smooth-scroll>
         <div id="scroll_down" class=" bg-no-repeat fixed z-50 text-white whitespace-no-wrap">
-            <p class="transform -rotate-90 relative text-base">SKROLLA</p>
+            <p class="transform -rotate-90 relative text-base">SCROLLA</p>
         </div>
     </a>
     </div>
@@ -28,6 +37,70 @@
 </script>
 
 <style scoped>
+
+.octagon {
+  overflow: hidden;
+  width: 220px;
+  height: 220px;
+}
+
+.text-container {
+  font-family: steelfishregular;
+  font-size: 1.25rem;
+  width: 210px;
+  z-index: 30;
+  text-align: center;
+}
+
+.inner {
+  @shadow: rgba(0, 0, 0, .1);
+  border-color: gray;
+  border: 10px;
+  color: white;
+  text-align: center;
+  transform: rotate(45deg);
+  background: #00000049;
+  width: 220px;
+  height: 220px;
+}
+
+@screen xs {
+  .octagon {
+    width: 250px;
+    height: 250px;
+  }
+
+  .text-container {
+    width: 240px;
+    z-index: 30;
+    font-size: 1.45rem;
+  }
+
+  .inner {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@screen lg {
+  .octagon {
+    width: 340px;
+    height: 340px;
+  }
+
+  .text-container {
+    width: 320px;
+    z-index: 30;
+    font-size: 2rem;
+  }
+
+  .inner {
+    width: 340px;
+    height: 340px;
+  }
+}
+
+
 #scroll_down {
     width: 11px;
     background-image: url("../assets/img/arrow_down.png");
@@ -55,6 +128,7 @@
 
 .circle{
   @apply hidden;
+  font-family: steelfishregular;
 }
 
 @screen xs {

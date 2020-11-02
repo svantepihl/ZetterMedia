@@ -3,24 +3,24 @@
         <div class="flex button-row xs:mt-4">
                 <button v-on:click="$store.commit('selectServiceType', 'commercial')" class="button-base">
                     <img src="../../assets/icons/video-camera-with-play-button.svg" class="m-auto invert">
-                    Reklamfilm
+                    <p> Reklamfilm </p>
                 </button>
 
                 <button v-on:click="$store.commit('selectServiceType', 'businessvideo')" class="button-base">
                     <img src="../../assets/icons/video-camera-with-play-button.svg" class="m-auto invert">
-                    Företagsfilm
+                    <p> Företagsfilm </p>
                 </button>
         </div>
 
         <div class="flex button-row xs:mt-4">
                 <button v-on:click="$store.commit('selectServiceType', 'musicvideo')" class="button-base">
                     <img src="../../assets/icons/video-camera-with-play-button.svg" class="m-auto invert">
-                    Musikvideo
+                    <p> Musikvideo </p>
                 </button>
 
                 <button v-on:click="$store.commit('selectServiceType', 'other')" class="button-base">
                     <img src="../../assets/icons/video-camera-with-play-button.svg" class="m-auto invert">
-                    Annat
+                    <p> Annat </p>
                 </button>
 
         </div>

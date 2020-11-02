@@ -1,5 +1,5 @@
 <template>
-    <form class="max-w-md mx-auto overflow-hidden p-6 space-y-10 text-2xl text-white mt-10 xs:mt-20 md:mt-32 lg:mt-48">
+    <form class="max-w-md mx-auto overflow-hidden p-6 space-y-10 text-2xl xl:text-4xl text-white mt-10 xs:mt-20 md:mt-32 lg:mt-32">
     <div class="relative border-b-2 focus-within:border-blue-500">
     <input v-model="name" type="text" id="name" name="name" placeholder=" " class="block w-full appearance-none focus:outline-none bg-transparent" />
     <label for="name" class="absolute top-0 -z-0 duration-300 origin-0">Namn</label>

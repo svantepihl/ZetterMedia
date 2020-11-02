@@ -1,7 +1,7 @@
 <template>
     <div class="h-full w-full mx-auto content-center">
         
-            <h1 class="text-white text-xl xs:text-2xl sm:text-4xl text-center">       
+            <h1 class="text-white text-xl xs:text-2xl sm:text-4xl lg:text-5xl text-center">       
                 <span id="1" v-if="currentStep == 0">Vad vill du ha hjälp med?</span>
                 <span id="2" v-else-if="currentStep == 1 && serviceNeeded == 'video'">Vilken typ av video?</span>
                 <span id="3" v-else-if="currentStep == 1 && serviceNeeded == 'stream'">Välj streaming paket:</span>

@@ -9,6 +9,8 @@ import VueTypedJs from 'vue-typed-js'
 import Vuex from 'vuex'
 import axios from 'axios'
 import VueAxios from 'vue-axios'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 // FONT AWESOME
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
@@ -27,6 +29,10 @@ export default function (Vue, {router, appOptions}) {
   Vue.use(vueSmoothScroll, {duration:2000})
   Vue.component('font-awesome', FontAwesomeIcon)
   Vue.use(VueTypedJs, VueAxios, axios)
+
+  created: {
+    AOS.init();
+  }
 
   router: {
     mode: 'history'
