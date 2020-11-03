@@ -1,9 +1,10 @@
 <template>
-    <div id="services" class="size-min-max h-auto w-screen relative bg-orange z-30 justify-items-center items-center">
+    <div id="kom-igang" class="size-min-max h-auto w-screen relative z-30 justify-items-center items-center text-white">
+		<h1 class="absolute right-0 top-0 mt-8 lg:mt-12 mr-3 lg:mr-6 text-3xl xs:text-3xl lg:text-5xl"> kom igång. </h1>
         <div class="mx-0 h-full w-full min-h-screen items-center flex justify-items-center">
             <transition name="fade">
-				<div v-if="showServices" class="m-0 p-0 w-screen h-min-screen h-auto">
-					<div class="grid-container">
+				<div class="m-0 p-0 w-screen h-min-screen h-auto">
+					<div class="grid-container pt-10">
 						<div class="ContentArea">
 							<Selectors></Selectors>
 						</div>
@@ -41,12 +42,6 @@
 			}
 		},
 		methods: {
-			updateScroll() {
-				this.scrollPos = window.scrollY
-				if (this.scrollPos>650) {
-					this.showServices = true
-				}  
-    		}
 		},
 		mounted() {
 			window.addEventListener('scroll', this.updateScroll);
@@ -70,8 +65,7 @@ body {
   height: auto;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 10fr 1.5fr 0.4fr;
-  gap: 10px 0px;
-  @apply bg-orange;
+  gap: 5px 0px;
   grid-template-areas:
     "."
     "ContentArea"
@@ -89,11 +83,13 @@ body {
 
 .size-min-max {
 	min-height: 100vh;
-	max-height: 1000px;
+	max-height: 1200px;
 }
 
-#services {
-	font-family: archivo_blackregular;
+#kom-igang {
+	@apply bg-orange;
+	background-image: url('../assets/img/komigang_bakgrund.png');
+	background-size: cover;
 }
 
 

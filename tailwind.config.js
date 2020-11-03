@@ -34,7 +34,10 @@ module.exports = {
         'xxs' : '0.6rem'
       },
       colors: {
-        orange: '#f89f67',
+        orange: '#F6833C',
+        yellow: '#FFE45C',
+        black: '#292828',
+        green: '#70C2A8'
       },
       transformOrigin: {
         "0": "0%",

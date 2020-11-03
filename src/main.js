@@ -9,6 +9,7 @@ import VueTypedJs from 'vue-typed-js'
 import Vuex from 'vuex'
 import axios from 'axios'
 import VueAxios from 'vue-axios'
+import VueScrollReveal from 'gridsome-scroll-reveal';
 
 // FONT AWESOME
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
@@ -21,13 +22,15 @@ config.autoAddCss = false;
 library.add(faVolumeUp, faVideo, faHashtag, faSitemap, faRss)
 
 
-export default function (Vue, {router, appOptions}) {
+export default function (Vue, { router, head, isClient ,appOptions }) {
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)
+  Vue.use(VueScrollReveal, {
+    duration: 1500,
+  });
   Vue.use(vueSmoothScroll, {duration:2000})
   Vue.component('font-awesome', FontAwesomeIcon)
-  Vue.use(VueTypedJs)
-  Vue.use(VueAxios, axios)
+  Vue.use(VueTypedJs, VueAxios, axios)
 
   router: {
     mode: 'history'
@@ -39,9 +42,10 @@ export default function (Vue, {router, appOptions}) {
     strict: true,
     state: {
       currentStep: 0,
+      name: "",
       email: "",
       tel: "",
-      budget: 0,
+      budget: "",
       serviceNeeded: "",
       serviceType: "",
       desc: ""
@@ -61,14 +65,21 @@ export default function (Vue, {router, appOptions}) {
         state.serviceType = s;
         state.currentStep++;
       },
+      updateBudget (state, s) {
+        state.budget = s;
+        state.currentStep++;
+      },
       updateDesc (state, s) {
         state.desc = s;
       },
+      updatePhone (state, s) {
+        state.tel = s;
+      },
       updateName (state, s) {
-        state.desc = s;
+        state.name = s;
       },
       updateEmail (state, s) {
-        state.desc = s;
+        state.email = s;
       }
     }
   })

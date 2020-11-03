@@ -6,34 +6,34 @@
         </div>
       </transition>
       
-        <div class="grid grid-cols-6 w-full gap-y-0 gap-x-0 h-auto min-h-screen p-0 m-0">
-            <div v-on:click="showOverlay = true" class="portfolio-item h-auto row-span-1 col-span-2 bg-gray-500">
+        <div class="grid md:grid-cols-6 w-full gap-y-0 gap-x-0 h-auto min-h-screen p-0 m-0">
+            <div v-on:click="showOverlay = true" class="portfolio-item h-64 md:h-auto md:col-span-2 bg-gray-500">
               <h1 class="text-4xl ml-1">
                 Case ett
               </h1>
 
             </div>
-            <div v-on:click="showOverlay = true" class="portfolio-item h-auto row-span-1 col-span-4 bg-gray-300">
+            <div v-on:click="showOverlay = true" class="portfolio-item h-64 md:h-auto md:col-span-4 bg-gray-300">
               <h1 class="text-4xl ml-1">
                 Case två
               </h1>
             </div>
-            <div v-on:click="showOverlay = true" class="portfolio-item h-auto row-span-1 col-span-3 bg-gray-600">
+            <div v-on:click="showOverlay = true" class="portfolio-item h-64 md:h-auto md:col-span-3 bg-gray-600">
               <h1 class="text-4xl ml-1">
                 Case tre
               </h1>
             </div>
-            <div v-on:click="showOverlay = true" class="portfolio-item h-auto row-span-1 col-span-3 bg-gray-500">
+            <div v-on:click="showOverlay = true" class="portfolio-item h-64 md:h-auto md:col-span-3 bg-gray-500">
               <h1 class="text-4xl ml-1">
                 Case fyra
               </h1>
             </div>
-            <div v-on:click="showOverlay = true" class="portfolio-item h-auto row-span-1 col-span-4 bg-gray-300">
+            <div v-on:click="showOverlay = true" class="portfolio-item h-64 md:h-auto md:col-span-4 bg-gray-300">
               <h1 class="text-4xl ml-1">
                 Case fem
               </h1>
             </div>
-            <div v-on:click="showOverlay = true" class="portfolio-item h-auto row-span-1 col-span-2 bg-gray-600">
+            <div v-on:click="showOverlay = true" class="portfolio-item h-64 md:h-auto md:col-span-2 bg-gray-600">
               <h1 class="text-4xl ml-1">
                 Case sex
               </h1>
@@ -47,7 +47,7 @@ export default {
     name:'Portfolio',
     data () {
 			return {
-			showOverlay: true,
+			showOverlay: false,
 			}
 		},
 }
@@ -78,8 +78,8 @@ export default {
   100%{
     transform:scale(1.01);
     -webkit-box-shadow: 10px 10px 60px 10px rgba(0,0,0,0.1);
--moz-box-shadow: 10px 10px 60px 10px rgba(0,0,0,0.1);
-box-shadow: 10px 10px 60px 10px rgba(0,0,0,0.1);
+    -moz-box-shadow: 10px 10px 60px 10px rgba(0,0,0,0.1);
+    box-shadow: 10px 10px 60px 10px rgba(0,0,0,0.1);
   }
 }
 
