@@ -6,7 +6,7 @@
 			<!-- <AboutUs></AboutUs> -->
 			<Services></Services>
 			<Form></Form>
-			<Portfolio></Portfolio>
+			<!-- <Portfolio></Portfolio> -->
 			<Footer></Footer>
 		</div>		
 	</div>

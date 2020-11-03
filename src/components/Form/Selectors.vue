@@ -2,15 +2,15 @@
     <div class="h-full w-full mx-auto content-center">
         
             <h1 class="text-white text-xl xs:text-2xl sm:text-4xl lg:text-5xl text-center">       
-                <span id="1" v-if="currentStep == 0">Vad vill du ha hjälp med?</span>
+                <span id="1" class=" text-transparent" v-if="currentStep == 0">Vad vill du ha hjälp med?</span>
                 <span id="2" v-else-if="currentStep == 1 && serviceNeeded == 'video'">Vilken typ av video?</span>
                 <span id="3" v-else-if="currentStep == 1 && serviceNeeded == 'stream'">Välj streaming paket:</span>
                 <span id="4" v-else-if="currentStep == 1 && serviceNeeded == 'audio'">Vilken typ?</span>
                 <span id="5" v-else-if="currentStep == 1 && serviceNeeded == 'social'">Vilken typ?</span>
+                <span id="5" v-else-if="currentStep == 1 && serviceNeeded == 'web'">Vilken typ?</span>
                 <span id="6" v-else-if="currentStep == 2">Budget?</span>
                 <span id="7" v-else-if="currentStep == 3">Beskriv kort din idé!</span>
                 <span id="8" v-else-if="currentStep == 4">Fyll i dina uppgifter:</span>
-                
             </h1>
 
             <ServiceOffers v-if="currentStep == 0"></ServiceOffers>

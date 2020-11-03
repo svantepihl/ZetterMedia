@@ -1,14 +1,14 @@
 <template>
     <div class="flex flex-wrap mx-auto justify-items-center mb-4 justify-center">
-        <button v-on:click="$store.commit('previous')" v-if="currentStep > 0 && currentStep < 5" class="nav-button hover:button-hover lg:text-xl">
+        <button v-on:click="$store.commit('previous')" v-if="currentStep > 0 && currentStep < 5" class="nav-button hover:button-hover text-xs xs:text-base lg:text-xl">
             Tillbaka
         </button>
 
-        <button v-on:click="$store.commit('next')" v-if="currentStep == 3"  class="nav-button hover:button-hover lg:text-xl">
+        <button v-on:click="$store.commit('next')" v-if="currentStep == 3"  class="nav-button hover:button-hover text-xs xs:text-base lg:text-xl">
             Fortsätt
         </button>
 
-        <button v-on:click="submit" v-if="currentStep == 4"  class="nav-button hover:button-hover lg:text-xl">
+        <button v-on:click="submit" v-if="currentStep == 4"  class="nav-button hover:button-hover text-xs xs:text-base lg:text-xl">
             Skicka!
         </button>
     </div>
@@ -64,9 +64,10 @@ export default {
     @apply rounded;
     transition: all 0.3s;
 }
-
-.nav-button:hover{
-    @apply border-4;
+@media (hover: hover) and (pointer: fine) {
+    .nav-button:hover{
+        @apply border-4;
+    }
 }
 
 </style>

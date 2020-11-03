@@ -6,20 +6,11 @@
     </video>
     
     <div id="overlay" class="flex fixed h-screen min-h-full w-screen z-40 items-center justify-center">
-      <div class="absolute text-container text-white">
-        <transition name="slideUp"> 
-          <p><strong>ZETTER MEDIA</strong><br> är en contentbyrå som fokuserar på att skapa effektfullt innehåll. Från film och ljud till webb och design skapar vi content att dela med världen.</p>
-        </transition>      
-      </div>
-       <div class='octagon'>
-        <div class='inner'>
-        </div>
-      </div>
-<!--         <div class="circle m-auto">
+      <div class="circle m-auto">
             <vue-typed-js class="w-full h-full flex m-auto px-1" :showCursor="false" :typeSpeed="0.01" :strings="['<p><strong>ZETTER MEDIA</strong><br> är en contentbyrå som fokuserar på att skapa effektfullt innehåll.^600 Från film och ljud^300 till webb och design^400 skapar vi content^200 att dela med världen.</p>']" :contentType="'html'">
                 <span class="typing w-full h-56 mx-3"></span>
             </vue-typed-js>
-        </div> -->
+        </div>
     </div>
     
     <a href="#services" v-smooth-scroll>
