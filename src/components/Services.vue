@@ -6,7 +6,7 @@
 
     <div class="service lg:col-span-2" v-scroll-reveal="{ delay: 250, distance: '50px' }">
       <div>
-        <h1 class="service-heading text-2xl lg:text-3xl">
+        <h1 class="service-heading text-xl lg:text-2xl">
           <span class="FirstLetter">L</span>juddesign
         </h1>
       </div>
@@ -18,7 +18,7 @@
 
     <div class="service lg:col-span-2" v-scroll-reveal="{ delay: 250, distance: '50px' }">
       <div>
-        <h1 class="service-heading text-2xl lg:text-2xl">
+        <h1 class="service-heading text-xl lg:text-2xl">
           <span class="FirstLetter">F</span>ilmproduktion
         </h1>
       </div>
@@ -30,7 +30,7 @@
 
     <div class="service lg:col-span-2" v-scroll-reveal="{ delay: 250, distance: '50px' }">
       <div>
-        <h1 class="service-heading text-2xl lg:text-3xl">
+        <h1 class="service-heading text-xl lg:text-2xl">
           <span class="FirstLetter no-spacing">P</span>odcast 
         </h1>
       </div>
@@ -40,7 +40,7 @@
     </div>
     <div class="service lg:col-span-2" v-scroll-reveal="{ delay: 250, distance: '50px' }">
       <div>
-        <h1 class="service-heading text-2xl lg:text-3xl">
+        <h1 class="service-heading text-xl lg:text-2xl">
           <span class="FirstLetter">S</span>treaming 
         </h1>
       </div>
@@ -51,7 +51,7 @@
     </div>
     <div class="service lg:col-span-2" v-scroll-reveal="{ delay: 250, distance: '50px' }">
       <div>
-        <h1 class="service-heading text-2xl lg:text-3xl">
+        <h1 class="service-heading text-xl lg:text-2xl">
           <span class="FirstLetter">S</span>ocial Media Content
         </h1>
       </div>
@@ -63,7 +63,7 @@
 
     <div class="service lg:col-span-2" v-scroll-reveal="{ delay: 250, distance: '50px' }">
       <div>
-        <h1 class="service-heading text-2xl lg:text-3xl">
+        <h1 class="service-heading text-xl lg:text-2xl">
           <span class="FirstLetter">G</span>rafisk profil 
         </h1>
       </div>
@@ -75,7 +75,7 @@
 
     <div class="service lg:col-span-2 lg:col-start-2 xl:col-start-auto" v-scroll-reveal="{ delay: 250, distance: '50px' }">
       <div>
-        <h1 class="service-heading text-2xl lg:text-3xl">
+        <h1 class="service-heading text-xl lg:text-2xl">
           <span class="FirstLetter">S</span>EO + Webbanalys 
         </h1>
       </div>
@@ -85,7 +85,7 @@
     </div>
     <div class="service lg:col-span-2" v-scroll-reveal="{ delay: 250, distance: '50px' }">
       <div>
-        <h1 class="service-heading text-2xl lg:text-3xl">
+        <h1 class="service-heading text-xl lg:text-2xl">
           <span class="FirstLetter">H</span>emsida
         </h1>
       </div>
@@ -141,7 +141,7 @@ export default {
   @apply my-2;
   @apply border-b-8; 
   @apply border-yellow;
-  @apply pr-12;
+  @apply pr-16;
 }
 
 @screen lg {
