@@ -58,8 +58,8 @@
 
 @screen xs {
     .button-base{
-        height: 8.5rem;
-        width: 8.5rem;
+        height: 7.5rem;
+        width: 7.5rem;
         font-size: 11px;
         @apply mx-2;
         margin-top: 9px;

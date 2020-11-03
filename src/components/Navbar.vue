@@ -13,7 +13,7 @@
 
 
 						<a class="text-white m-0 p-0 hover:bold" href="#services" v-on:click="showMenu=false">
-							<li>case.</li>
+							<li>kom igång.</li>
 						</a>
 
 						<a class="text-white m-0 p-0 hover:bold" href="#">
@@ -50,7 +50,7 @@
 			<div class="hidden flex-grow sm:flex items-center w-auto pt-0 text-4xl lg:text-5xl -mt-2" id="nav-content">
 				<ul id="menu" class="hidden list-reset sm:flex justify-end flex-1 items-center w-auto text-xs">
 					<li class="spin ml-4 lg:ml-8">
-						<a class="text-white m-0 p-0" href="#" v-smooth-scroll>
+						<a class="text-white m-0 p-0" href="#tjanster" v-smooth-scroll>
 							<p><span style="-webkit-transition-delay: 0.00s; transition-delay: 0s;">t</span></p>
 							<p><span style="-webkit-transition-delay: 0.02s; transition-delay: 0.02s;">j</span></p>
 							<p><span style="-webkit-transition-delay: 0.04s; transition-delay: 0.04s;">ä</span></p>
@@ -63,11 +63,16 @@
 					</li>
 
 					<li class="spin ml-4 lg:ml-8">
-						<a class="text-white m-0 p-0" href="#work-with-us" v-smooth-scroll>
-							<p><span style="-webkit-transition-delay: 0.00s; transition-delay: 0s;">c</span></p>
-							<p><span style="-webkit-transition-delay: 0.02s; transition-delay: 0.02s;">a</span></p>
-							<p><span style="-webkit-transition-delay: 0.04s; transition-delay: 0.04s;">s</span></p>
-							<p><span style="-webkit-transition-delay: 0.06s; transition-delay: 0.06s;">e.</span></p>
+						<a class="text-white m-0 p-0" href="#kom-igang" v-smooth-scroll>
+							<p><span style="-webkit-transition-delay: 0.00s; transition-delay: 0s;">k</span></p>
+							<p><span style="-webkit-transition-delay: 0.02s; transition-delay: 0.02s;">o</span></p>
+							<p><span style="-webkit-transition-delay: 0.04s; transition-delay: 0.04s;">m</span></p>
+							<p><span style="-webkit-transition-delay: 0.06s; transition-delay: 0.06s;">&#160;</span></p>
+							<p><span style="-webkit-transition-delay: 0.08s; transition-delay: 0.08s;">i</span></p>
+							<p><span style="-webkit-transition-delay: 0.08s; transition-delay: 0.10s;">g</span></p>
+							<p><span style="-webkit-transition-delay: 0.08s; transition-delay: 0.12s;">å</span></p>
+							<p><span style="-webkit-transition-delay: 0.08s; transition-delay: 0.14s;">n</span></p>
+							<p><span style="-webkit-transition-delay: 0.08s; transition-delay: 0.08s;">g.</span></p>
 						</a>
 					</li>
 
@@ -93,7 +98,7 @@
 					</li>
 
 					<li class="spin ml-4 lg:ml-8 mr-4">
-						<a class="text-white m-0 p-0" href="#">
+						<a class="text-white m-0 p-0" href="#kontakt" v-smooth-scroll>
 							<p><span style="-webkit-transition-delay: 0.00s; transition-delay: 0s;">k</span></p>
 							<p><span style="-webkit-transition-delay: 0.02s; transition-delay: 0.02s;">o</span></p>
 							<p><span style="-webkit-transition-delay: 0.04s; transition-delay: 0.04s;">n</span></p>

@@ -1,36 +1,36 @@
 <template>
     <div class="flex justify-items-center place-content-start items-center h-full w-full text-xs sm:text-lg flex-col lg:mt-4">
         <div class="flex button-row xs:mt-4">
-                <button v-on:click="$store.commit('selectService', 'audio')" class="button-base">
+                <button v-on:click="$store.commit('selectService', 'audio')" class="button-base" v-scroll-reveal="{ delay: 250, distance: '50px' }">
                     <img src="../../assets/icons/sound-waves.svg" class="mx-auto invert">
                     <p> Ljudproduktion </p>
                 </button>
 
-                <button v-on:click="$store.commit('selectService', 'video')" class="button-base">
+                <button v-on:click="$store.commit('selectService', 'video')" class="button-base" v-scroll-reveal="{ delay: 250, distance: '50px' }">
                     <img src="../../assets/icons/video-camera-with-play-button.svg" class="mx-auto invert">
                     <p> Videoproduktion </p>
                 </button>
 
-                <button v-on:click="$store.commit('selectService','stream')" class="button-base hidden lg:block landscape:block">
+                <button v-on:click="$store.commit('selectService','stream')" class="button-base hidden lg:block landscape:block" v-scroll-reveal="{ delay: 250, distance: '50px' }">
                     <img src="../../assets/icons/live-streaming.svg" class="mx-auto invert">
                     <p> Streaming <br> </p>
                 </button>
         </div>
 
         <div class="flex button-row xs:mt-4">
-                <button v-on:click="$store.commit('selectService','social')" class="button-base">
+                <button v-on:click="$store.commit('selectService','social')" class="button-base" v-scroll-reveal="{ delay: 250, distance: '50px' }">
                     <img src="../../assets/icons/social-media-marketing.svg" class="mx-auto invert">
                     <p>Social Media</p>
                 </button>
 
-                <button v-on:click="$store.commit('selectService','web')" class="button-base">
+                <button v-on:click="$store.commit('selectService','web')" class="button-base" v-scroll-reveal="{ delay: 250, distance: '50px' }">
                     <img src="../../assets/icons/globe.svg" class="mx-auto invert">
                     <p> Webb + SEO <br> </p>
                 </button>
         </div>
 
         <div class="flex button-row xs:mt-4">
-                <button v-on:click="$store.commit('selectService','stream')" class="button-base landscape:hidden lg:hidden">
+                <button v-on:click="$store.commit('selectService','stream')" class="button-base landscape:hidden lg:hidden" v-scroll-reveal="{ delay: 250, distance: '50px' }">
                     <img src="../../assets/icons/live-streaming.svg" class="mx-auto invert">
                     <p> Streaming <br> </p>
                 </button>
