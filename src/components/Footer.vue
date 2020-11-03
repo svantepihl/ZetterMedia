@@ -4,7 +4,7 @@
 
     <!-- ABOUT COLUMN -->
 
-    <div class="w-full md:w-1/3 p-5 border-r border-yellow md:text-left">
+    <div class="w-full md:w-1/3 p-5 md:text-left">
       <div class="my-6 ml-3 text-xl font-semibold">Om oss</div>
       <p class="p-3 text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac est massa. Donec
         eget elementum sapien, tincidunt tempor nunc. Cras sodales id ipsum at convallis.</p>
@@ -15,7 +15,7 @@
 
     <!-- CONTACTS COLUMN -->
 
-    <div class="w-full md:w-1/3 p-5 border-r border-yellow">
+    <div class="w-full md:w-1/3 p-5">
       <div class="my-6 text-xl font-semibold">Kontaktuppgifter</div>
       <p class="mt-8 text-gray-400">
         Klostergatan 1 <br>
@@ -44,7 +44,7 @@
             placeholder="Meddelande"></textarea>
         </div>
         <div class="flex justify-between items-center">
-          <button class="w-full py-2 px-4 rounded bg-blue-800 hover:bg-yellow text-white font-bold"
+          <button class="w-full py-2 px-4 rounded bg-blue-800 hover:bg-blue-900 text-white font-bold"
             type="button">Skicka</button>
         </div>
       </form>

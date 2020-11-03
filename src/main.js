@@ -9,6 +9,7 @@ import VueTypedJs from 'vue-typed-js'
 import Vuex from 'vuex'
 import axios from 'axios'
 import VueAxios from 'vue-axios'
+import VueScrollReveal from 'gridsome-scroll-reveal';
 
 // FONT AWESOME
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
@@ -24,10 +25,9 @@ library.add(faVolumeUp, faVideo, faHashtag, faSitemap, faRss)
 export default function (Vue, { router, head, isClient ,appOptions }) {
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)
-
-  if (process.isClient) {
-  AOS.init()
-  }
+  Vue.use(VueScrollReveal, {
+    duration: 1500,
+  });
   Vue.use(vueSmoothScroll, {duration:2000})
   Vue.component('font-awesome', FontAwesomeIcon)
   Vue.use(VueTypedJs, VueAxios, axios)
