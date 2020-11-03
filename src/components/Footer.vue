@@ -45,7 +45,7 @@
         </div>
         <div class="flex justify-between items-center">
           <button class="w-full py-2 px-4 rounded bg-blue-800 hover:bg-blue-900 text-white font-bold"
-            type="button">Skicka</button>
+            type="submit">Skicka</button>
         </div>
       </form>
     </div>
