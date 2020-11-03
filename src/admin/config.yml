@@ -1,6 +1,7 @@
 backend:
   name: github
   repo: svantepihl/zettermedia
+  branch: stable
 
 media_folder: "static/uploads"
 public_folder: "/uploads"
