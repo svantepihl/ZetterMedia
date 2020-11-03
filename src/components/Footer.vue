@@ -30,13 +30,13 @@
 
     <div class="w-full md:w-1/3 p-5">
       <div class="mt-6 text-xl font-semibold">SÄG HALLÅ!</div>
-      <form class="w-4/5 mx-auto mt-2 px-6 pt-6 pb-4 rounded" data-netlify="true" method="POST">
+      <form class="w-4/5 mx-auto mt-2 px-6 pt-6 pb-4 rounded" data-netlify="true" name="contact" method="POST">
         <div class="flex items-center mb-4">
-          <input class="w-full h-10 p-2 border-b border-blue-800 bg-blue-900 text-white" type="text"
+          <input class="w-full h-10 p-2 border-b border-blue-800 bg-blue-900 text-white" type="text" name="name"
             placeholder="Namn">
         </div>
         <div class="flex items-center mb-4">
-          <input class="w-full h-10 p-2 border-b border-blue-800 bg-blue-900 text-white" type="text"
+          <input class="w-full h-10 p-2 border-b border-blue-800 bg-blue-900 text-white" type="email" name="email"
             placeholder="Email">
         </div>
         <div class="mb-6">
