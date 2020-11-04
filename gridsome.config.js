@@ -20,6 +20,15 @@ module.exports = {
     }
   },
 
+  templates: {
+    Post: [
+      {
+        path: '/blog/:title',
+        component: './src/templates/Post.vue'
+      }
+    ]
+  },
+
   plugins: [
     {
       use: '@gridsome/source-filesystem',
