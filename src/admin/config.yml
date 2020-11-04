@@ -12,7 +12,25 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Excerpt", name: "excerpt", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "date"}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - { label: "Title", name: "title", widget: "string", required: true }
+      - {
+          label: "Description",
+          name: "description",
+          widget: "string",
+          required: false,
+        }
+      - {
+          label: "Cover Image",
+          name: "cover-image",
+          widget: "image",
+          required: false,
+        }
+      - { label: "Publish Date", name: "date", widget: "date" }
+      - {
+          label: "Tags",
+          name: "tags",
+          widget: "list",
+          # default: ["post"],
+          required: false,
+        }
+      - { label: "Body", name: "body", widget: "markdown" }
