@@ -9,6 +9,18 @@ module.exports = {
     './src/**/*.jsx',
   ],
   theme: {
+    fontSize: {
+      xs: '0.65rem',
+      sm: '0.775rem',
+      base: '0.9rem',
+      lg: '1.025rem',
+      xl: '1.15rem',
+      '2xl': '1.4rem',
+      '3xl': '1.775rem',
+      '4xl': '2.15rem',
+      '5xl': '2.9rem',
+      '6xl': '3.9rem',
+    },
     screens: {
       'portrait': {'raw': '(orientation: portrait)'},
       // => @media (orientation: portrait) { ... }

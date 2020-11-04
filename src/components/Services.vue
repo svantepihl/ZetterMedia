@@ -118,6 +118,7 @@ export default {
   @apply h-auto;
   @apply text-left;
   @apply flex;
+  @apply text-base;
   @apply flex-col;
   @apply align-middle;
   @apply justify-items-start;
