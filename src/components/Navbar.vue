@@ -7,26 +7,26 @@
 			>
 			<div v-if="showMenu" class="fixed flex content-center justify-center h-screen w-screen sm:hidden m-0 p-0 bg-orange z-20 text-white overflow-hidden">
 					<ul class="text-4xl list-style-none align-middle content-center justify-center flex flex-col text-center">
-						<a class="text-white m-0 p-0 hover:bold" href="#">
+						<g-link class="text-white m-0 p-0 hover:bold" href="#">
 							<li>tjänster.</li>
-						</a>
+						</g-link>
 
 
-						<a class="text-white m-0 p-0 hover:bold" href="#services" v-on:click="showMenu=false">
+						<g-link class="text-white m-0 p-0 hover:bold" href="#services" v-on:click="showMenu=false">
 							<li>kom igång.</li>
-						</a>
+						</g-link>
 
-						<a class="text-white m-0 p-0 hover:bold" href="#">
+						<g-link class="text-white m-0 p-0 hover:bold" href="#">
 							<li>om oss.</li>
-						</a>
+						</g-link>
 
-						<a class="text-white m-0 p-0 hover:bold" href="#services" v-on:click="showMenu=false">
+						<g-link class="text-white m-0 p-0 hover:bold" href="#services" v-on:click="showMenu=false">
 							<li>blogg.</li>
-						</a>
+						</g-link>
 
-						<a class="text-white m-0 p-0 hover:bold" href="#">
+						<g-link class="text-white m-0 p-0 hover:bold" href="#">
 							<li>kontakt.</li>
-						</a>
+						</g-link>
 					</ul>
 			</div>
 			</transition>
@@ -88,13 +88,13 @@
 					</li>
 
 					<li class="spin ml-4 lg:ml-8">
-						<a class="text-white m-0 p-0" href="/blogg">
+						<g-link class="text-white m-0 p-0" to="/blogg">
 							<p><span style="-webkit-transition-delay: 0.00s; transition-delay: 0s;">b</span></p>
 							<p><span style="-webkit-transition-delay: 0.02s; transition-delay: 0.02s;">l</span></p>
 							<p><span style="-webkit-transition-delay: 0.04s; transition-delay: 0.04s;">o</span></p>
 							<p><span style="-webkit-transition-delay: 0.06s; transition-delay: 0.06s;">g</span></p>
 							<p><span style="-webkit-transition-delay: 0.08s; transition-delay: 0.08s;">g.</span></p>
-						</a>
+						</g-link>
 					</li>
 
 					<li class="spin ml-4 lg:ml-8 mr-4">
