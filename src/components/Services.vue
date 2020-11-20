@@ -1,7 +1,7 @@
 <template>
 <div id="tjanster" class="relative min-w-screen w-screen min-h-screen h-auto bg-green text-white z-40 pt-16 pb-8 md:pb-12 lg:pt-24 flex items-center justify-center">
   <h1 class="absolute right-0 top-0 mt-8 lg:mt-16 mr-3 lg:mr-6 text-3xl xs:text-3xl lg:text-5xl whitespace-no-wrap"> våra tjänster. </h1>
-  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 xl:grid-cols-8 md:gap-x-20 gap-y-8 xs:gap-y-12 lg:gap-y-20 h-auto mx-4 xs:mx-8 lg:mx-12 my-12">
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 xl:grid-cols-8 md:gap-x-20 gap-y-8 xs:gap-y-12 lg:gap-y-20 h-auto mx-4 xs:mx-8 lg:mx-20 my-12">
   
 
     <div class="service lg:col-span-2" v-scroll-reveal="{ delay: 250, distance: '50px' }">
@@ -51,7 +51,7 @@
     </div>
     <div class="service lg:col-span-2" v-scroll-reveal="{ delay: 250, distance: '50px' }">
       <div>
-        <h1 class="service-heading text-xl lg:text-2xl">
+        <h1 class="service-heading text-base lg:text-lg">
           <span class="FirstLetter">S</span>ocial Media Content
         </h1>
       </div>
@@ -127,6 +127,8 @@ export default {
 
 .service-text {
   @apply mb-2;
+  @apply text-sm;
+  @apply max-w-xs
 }
 
 .FirstLetter{

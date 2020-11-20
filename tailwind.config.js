@@ -48,7 +48,7 @@ module.exports = {
       colors: {
         orange: '#F6833C',
         yellow: '#FFE45C',
-        black: '#292828',
+        altblack: '#292828',
         green: '#70C2A8'
       },
       transformOrigin: {

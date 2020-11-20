@@ -76,7 +76,7 @@
 }
 }
 
-@screen lg {
+@screen md {
   .button-base{
     height: 13rem;
     width: 13rem;
