@@ -43,7 +43,7 @@ export default {
     components: {BloggHeader,PostCard,Footer},
     metaInfo () {
     return {
-      title: this.$page.Post.title,
+      title: this.$page.post.title,
       meta: [
         {
           name: 'description',
