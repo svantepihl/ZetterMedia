@@ -41,6 +41,7 @@ import PostCard from '../components/PostCard.vue'
 import Footer from '../components/Footer.vue'
 export default {
     name:"Blogg",
+    title:"Blogg",
     components: {BloggHeader,PostCard,Footer}
 }
 </script>
