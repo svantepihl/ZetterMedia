@@ -1,5 +1,5 @@
 <template>
-    <div id="kom-igang" class="size-min-max h-auto w-screen relative z-30 justify-items-center items-center text-white">
+    <div id="get-started" class="size-min-max h-auto w-screen relative z-30 justify-items-center items-center text-white">
 		<h1 class="absolute right-0 top-0 mt-8 lg:mt-12 mr-3 lg:mr-6 text-3xl xs:text-3xl lg:text-5xl"> kom igång. </h1>
         <div class="mx-0 h-full w-full min-h-screen items-center flex justify-items-center">
             <transition name="fade">
@@ -86,7 +86,7 @@ body {
 	max-height: 1200px;
 }
 
-#kom-igang {
+#get-started {
 	@apply bg-orange;
 	background-image: url('../assets/img/komigang_bakgrund.png');
 	background-size: cover;

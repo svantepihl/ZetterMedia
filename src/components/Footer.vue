@@ -1,5 +1,5 @@
 <template>
-<div id="footer" class="w-full bg-black z-50 relative">
+<div id="contact" class="w-full bg-black z-50 relative">
   <div class="flex flex-wrap text-center text-white">
 
     <!-- ABOUT COLUMN -->
@@ -32,19 +32,19 @@
       <div class="mt-6 text-xl font-semibold">SÄG HALLÅ!</div>
       <form class="w-4/5 mx-auto mt-2 px-6 pt-6 pb-4 rounded" data-netlify="true" name="contact" method="POST">
         <div class="flex items-center mb-4">
-          <input class="w-full h-10 p-2 border-b border-blue-800 bg-blue-900 text-white" type="text" name="name"
+          <input class="w-full h-10 p-2 border-b border-gray-800 bg-gray-900 text-white" type="text" name="name"
             placeholder="Namn">
         </div>
         <div class="flex items-center mb-4">
-          <input class="w-full h-10 p-2 border-b border-blue-800 bg-blue-900 text-white" type="email" name="email"
+          <input class="w-full h-10 p-2 border-b border-gray-800 bg-gray-900 text-white" type="email" name="email"
             placeholder="Email">
         </div>
         <div class="mb-6">
-          <textarea class="w-full h-24 px-2 pt-2 border-b-2 border-blue-800 bg-blue-900 text-white"
+          <textarea class="w-full h-24 px-2 pt-2 border-b-2 border-gray-800 bg-gray-900 text-white"
             placeholder="Meddelande"></textarea>
         </div>
         <div class="flex justify-between items-center">
-          <button class="w-full py-2 px-4 rounded bg-blue-800 hover:bg-blue-900 text-white font-bold"
+          <button class="w-full py-2 px-4 rounded bg-gray-800 hover:bg-gray-900 text-white font-bold"
             type="submit">Skicka</button>
         </div>
       </form>

@@ -1,6 +1,6 @@
 <template>
-<div class="mt-12 mb-12 w-full flex flex-col items-center justify-center">
-    <g-image src="../assets/img/animated_logo.gif" blur="none" alt="logo"></g-image>
+<div class="mt-12 -mb-8 w-full flex flex-col items-center justify-center">
+    <g-image src="../assets/img/animated_logo_black.gif" blur="none" alt="logo"></g-image>
     <g-link class=" absolute top-0 left-0 ml-10 mt-32" to="/">
         <div>
             <g-image id="back" src="../assets/img/arrow_left.png"></g-image>

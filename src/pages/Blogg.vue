@@ -2,8 +2,8 @@
 <div class=" w-screen h-auto min-h-screen bg-black flex flex-col items-center justify-center">
     <BloggHeader></BloggHeader>
 
-    <div id="posts" class=" min-h-screen w-full flex flex-col justify-center items-center">
-    <PostCard v-for="edge in $page.posts.edges" :Post="edge.node" :key="edge.node.id"></PostCard>
+    <div id="posts" class="relative min-h-screen h-auto w-full flex flex-col justify-center items-center mt-0">
+      <PostCard v-for="edge in $page.posts.edges" :Post="edge.node" :key="edge.node.id"></PostCard>
     </div>
     <Footer></Footer>
 </div>
@@ -40,9 +40,10 @@ import BloggHeader from '../components/BloggHeader.vue';
 import PostCard from '../components/PostCard.vue'
 import Footer from '../components/Footer.vue'
 export default {
-    name:"Blogg",
-    title:"Blogg",
-    components: {BloggHeader,PostCard,Footer}
+    components: {BloggHeader,PostCard,Footer},
+    metaInfo: {
+      title: 'Välkommna'
+  }
 }
 </script>
 
