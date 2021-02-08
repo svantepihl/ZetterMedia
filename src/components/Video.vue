@@ -7,14 +7,14 @@
     
     <div id="overlay" class="flex fixed h-screen min-h-full w-screen z-40 items-center justify-center">
       <div class="circle m-auto">
-            <vue-typed-js class="w-full h-full flex m-auto px-1" :showCursor="false" :typeSpeed="0.01" :strings="['<p><strong>ZETTER MEDIA</strong><br> är en contentbyrå som fokuserar på att skapa effektfullt innehåll.^600 Från film och ljud^300 till webb och design^400 skapar vi content^200 att dela med världen.</p>']" :contentType="'html'">
+            <vue-typed-js class="w-full h-full flex m-auto px-1 mt-0 xs:mt-6 sm:mt-4 md:mt-1 lg:-mt-4 xl:mt-0" :showCursor="false" :typeSpeed="0.01" :strings="['<p><strong>ZETTER MEDIA</strong><br> är en mediabyrå som skapar effektfullt innehåll.^400 Från film och ljud^200 till webb och design^200 skapar vi content^200 att dela med världen.</p>']" :contentType="'html'">
                 <span class="typing w-full h-56 mx-3"></span>
             </vue-typed-js>
         </div>
     </div>
     
     <a href="#services" v-smooth-scroll>
-        <div id="scroll_down" class=" bg-no-repeat fixed z-50 text-white whitespace-no-wrap">
+        <div id="scroll_down" class=" bg-no-repeat fixed z-50 text-white whitespace-nowrap">
             <p class="transform -rotate-90 relative text-base">SCROLLA</p>
         </div>
     </a>
@@ -28,68 +28,6 @@
 </script>
 
 <style scoped>
-
-.octagon {
-  overflow: hidden;
-  width: 220px;
-  height: 220px;
-}
-
-.text-container {
-  font-family: steelfishregular;
-  font-size: 1.25rem;
-  width: 210px;
-  z-index: 30;
-  text-align: center;
-}
-
-.inner {
-  @shadow: rgba(0, 0, 0, .1);
-  border-color: gray;
-  border: 10px;
-  color: white;
-  text-align: center;
-  transform: rotate(45deg);
-  background: #00000049;
-  width: 220px;
-  height: 220px;
-}
-
-@screen xs {
-  .octagon {
-    width: 250px;
-    height: 250px;
-  }
-
-  .text-container {
-    width: 240px;
-    z-index: 30;
-    font-size: 1.45rem;
-  }
-
-  .inner {
-    width: 250px;
-    height: 250px;
-  }
-}
-
-@screen lg {
-  .octagon {
-    width: 340px;
-    height: 340px;
-  }
-
-  .text-container {
-    width: 320px;
-    z-index: 30;
-    font-size: 2rem;
-  }
-
-  .inner {
-    width: 340px;
-    height: 340px;
-  }
-}
 
 
 #scroll_down {
@@ -120,6 +58,8 @@
 .circle{
   @apply hidden;
   font-family: steelfishregular;
+  @apply items-center;
+  @apply justify-center;
 }
 
 @screen xs {
@@ -127,12 +67,11 @@
     display: flex;
     position: relative;
     display: block;
-    width: 70%;
+    width: 64%;
     height: 0;
-    padding: 35% 0;
+    padding: 32% 0;
     border-radius: 50%;
     
-    /* Just making it pretty */
     @shadow: rgba(0, 0, 0, .1);
     background: #00000049;
     border-color: gray;
@@ -145,7 +84,21 @@
 
 @screen sm {
   .circle {
-    @apply hidden;
+    display: flex;
+    position: relative;
+    display: block;
+    width: 64%;
+    height: 0;
+    padding: 32% 0;
+    border-radius: 50%;
+    
+    @shadow: rgba(0, 0, 0, .1);
+    background: #00000049;
+    border-color: gray;
+    border: 10px;
+    color: white;
+    text-align: center;
+    @apply text-3xl
   }
 }
 
@@ -159,14 +112,13 @@
     padding: 22% 0;
     border-radius: 50%;
     
-    /* Just making it pretty */
     @shadow: rgba(0, 0, 0, .1);
     background: #00000049;
     border-color: gray;
     border: 10px;
     color: white;
     text-align: center;
-    @apply text-2xl
+    font-size: 1.8rem;
   }
 }
 
@@ -175,19 +127,18 @@
     display: flex;
     position: relative;
     display: block;
-    width: 30%;
+    width: 40%;
     height: 0;
-    padding: 15% 0;
+    padding: 20% 0;
     border-radius: 50%;
     
-    /* Just making it pretty */
     @shadow: rgba(0, 0, 0, .1);
     background: #00000049;
     border-color: gray;
     border: 10px;
     color: white;
     text-align: center;
-    @apply text-3xl
+    @apply text-4xl
   }
 } 
 
@@ -201,7 +152,6 @@
     padding: 12% 0;
     border-radius: 50%;
     
-    /* Just making it pretty */
     @shadow: rgba(0, 0, 0, .1);
     background: #00000049;
     border-color: gray;
@@ -222,7 +172,6 @@
     padding: 10% 0;
     border-radius: 50%;
     
-    /* Just making it pretty */
     @shadow: rgba(0, 0, 0, .1);
     background: #00000049;
     border-color: gray;

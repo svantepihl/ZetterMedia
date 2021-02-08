@@ -1,6 +1,6 @@
 <template>
 <div id="services" class="relative min-w-screen w-screen min-h-screen h-auto bg-green text-white z-40 pt-16 pb-8 md:pb-12 lg:pt-24 flex items-center justify-center">
-  <h1 class="absolute right-0 top-0 mt-8 lg:mt-16 mr-3 lg:mr-6 text-3xl xs:text-3xl lg:text-5xl whitespace-no-wrap"> våra tjänster. </h1>
+  <h1 class="absolute right-0 top-0 mt-8 lg:mt-16 mr-3 lg:mr-6 text-3xl xs:text-3xl lg:text-5xl whitespace-nowrap"> våra tjänster. </h1>
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 xl:grid-cols-8 md:gap-x-20 gap-y-8 xs:gap-y-12 lg:gap-y-20 h-auto mx-4 xs:mx-8 lg:mx-20 my-12">
   
 
@@ -147,7 +147,7 @@ export default {
 }
 
 .service-heading {
-  @apply whitespace-no-wrap;
+  @apply whitespace-nowrap;
   @apply inline-block;
   @apply w-auto;
   @apply my-2;
