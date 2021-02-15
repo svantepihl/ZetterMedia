@@ -1,6 +1,6 @@
 <template>
     <div id="get-started" class="size-min-max h-auto w-screen relative z-30 justify-items-center items-center text-white">
-		<h1 class="absolute right-0 top-0 mt-8 lg:mt-12 mr-3 lg:mr-6 text-3xl xs:text-3xl lg:text-5xl"> kom igång. </h1>
+		<PageTitle title="kom igång."></PageTitle>
         <div class="mx-0 h-full w-full min-h-screen items-center flex justify-items-center">
             <transition name="fade">
 				<div class="m-0 p-0 w-screen h-min-screen h-auto">
@@ -30,10 +30,11 @@
 	import ProgressBar from '../components/Form/ProgressBar'
 	import VideoOffers from '../components/Form/VideoOffers';
 	import Selectors from '../components/Form/Selectors'
+	import PageTitle from '../components/PageTitle'
 	import { mapState } from 'vuex';
 	export default {
         name: "Form",
-		components: {NavButtons,ServiceOffers,ProgressBar,VideoOffers, Selectors},
+		components: {NavButtons,ServiceOffers,ProgressBar,VideoOffers, Selectors,PageTitle},
 		computed: mapState(['currentStep','serviceNeeded','serviceType']),
 		data () {
 			return {

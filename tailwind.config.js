@@ -49,7 +49,9 @@ module.exports = {
         orange: '#F6833C',
         yellow: '#FFE45C',
         altblack: '#292828',
-        green: '#70C2A8'
+        green: '#70C2A8',
+        bggrey: '#212121',
+        eggwhite: '#C6C6C6'
       },
       transformOrigin: {
         "0": "0%",

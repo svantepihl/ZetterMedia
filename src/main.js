@@ -15,11 +15,11 @@ import VueScrollReveal from 'gridsome-scroll-reveal';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { config, library } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
-import { faHashtag, faRss, faSitemap, faVideo, faVolumeUp } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope,faCoffee } from '@fortawesome/free-solid-svg-icons'
 
 
 config.autoAddCss = false;
-library.add(faVolumeUp, faVideo, faHashtag, faSitemap, faRss)
+library.add(faEnvelope,faCoffee)
 
 
 export default function (Vue, { router, head, isClient ,appOptions }) {

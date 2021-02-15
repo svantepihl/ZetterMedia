@@ -7,6 +7,7 @@
 			<Services></Services>
 			<Form></Form>
 			<AboutUs></AboutUs>
+			<Vision></Vision>
 			<!-- <Portfolio></Portfolio> -->
 			<Footer></Footer>
 		</div>		
@@ -21,9 +22,10 @@
 	import Services from '../components/Services.vue'
 	import Portfolio from '../components/Portfolio.vue'
 	import Footer from '../components/Footer.vue'
+	import Vision from '../components/Vision.vue'
 
   	export default {
-		components: {Navbar,Video,Form,AboutUs,Services,Portfolio, Footer},
+		components: {Navbar,Video,Form,AboutUs,Services,Portfolio,Footer,Vision},
 	}
 </script>
 
