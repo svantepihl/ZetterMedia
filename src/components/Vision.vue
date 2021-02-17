@@ -1,6 +1,6 @@
 <template>
 <div id="about" class="min-h-screen w-screen relative bg-bggrey flex items-center justify-center z-50">
-  <PageTitle title="vår vision."></PageTitle>
+  <PageTitle class="text-white" title="vår vision."></PageTitle>
   <div class="container mx-auto my-40" v-scroll-reveal="{ delay: 100, distance:'15rem'}">
       <div class="grid px-6 grid-cols-1 md:grid-cols-3 gap-12 mx-auto">
         <div class="border-white col-span-1 md:col-span-2 flex justify-start items-center flex-col">

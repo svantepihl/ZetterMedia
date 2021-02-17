@@ -8,6 +8,7 @@
 			<Form></Form>
 			<AboutUs></AboutUs>
 			<Vision></Vision>
+			<Contact></Contact>
 			<!-- <Portfolio></Portfolio> -->
 			<Footer></Footer>
 		</div>		
@@ -23,9 +24,10 @@
 	import Portfolio from '../components/Portfolio.vue'
 	import Footer from '../components/Footer.vue'
 	import Vision from '../components/Vision.vue'
+	import Contact from '../components/Contact.vue'
 
   	export default {
-		components: {Navbar,Video,Form,AboutUs,Services,Portfolio,Footer,Vision},
+		components: {Navbar,Video,Form,AboutUs,Services,Portfolio,Footer,Vision,Contact},
 	}
 </script>
 

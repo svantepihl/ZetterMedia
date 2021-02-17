@@ -36,8 +36,8 @@
 		<nav class="flex items-center justify-between flex-wrap bg-transparent p-6 fixed w-full z-30 top-0">
 			<div class="flex items-center flex-shrink-0 text-white mr-6">
 				<a class="text-white no-underline hover:text-white hover:no-underline" href="#">
-					<g-image src="~/assets/img/logo.png" width="250px" quality="100" blur="100" immediate="true" class="z-30 hidden md:block"></g-image>
-					<g-image src="~/assets/img/logo.png" width="145px" quality="100" blur="100" immediate="true" class="z-30 md:hidden "></g-image>
+					<g-image src="~/assets/img/logo.png" width="250px" quality="100" blur="100" class="z-30 hidden md:block"></g-image>
+					<g-image src="~/assets/img/logo.png" width="145px" quality="100" blur="100" class="z-30 md:hidden "></g-image>
 				</a>
 			</div>
 

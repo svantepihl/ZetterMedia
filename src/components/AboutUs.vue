@@ -1,11 +1,11 @@
 <template>
 <div id="about" class="min-h-screen w-screen relative bg-bggrey flex items-center justify-center z-50">
-  <PageTitle title="om oss."></PageTitle>
+  <PageTitle class="text-white" title="om oss."></PageTitle>
   <div class="container px-6 mx-auto pb-20 mt-32" v-scroll-reveal="{ delay: 250, distance: '50px',afterReveal: startTyping}">
     <div class="col-span-1 md:col-span-3 border-1 border-white h-full mx-8">
       <div class=" flex items-center justify-center text-center h-44 lg:h-44 text-3xl md:text-6xl font-mono text-white">
         <ClientOnly>
-          <vue-typer :text='["Hej! Kul att du är här!","Det är vi som är","Zetter Media"]'></vue-typer>
+          <vue-typer initial-action='typing' :pre-type-delay='200' :text='["Hej! Kul att du är här!","Det är vi som är","Zetter Media"]'></vue-typer>
         </ClientOnly>
       </div>
     </div>
