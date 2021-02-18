@@ -23,8 +23,8 @@
                 </p>
             </div>
         </div>
-        <div class="hidden md:block">
-            <g-image class=" max-w-sm" src="../assets/img/vision.jpg"/>
+        <div class="hidden md:block object-contain">
+            <g-image class="max-w-sm w-full h-full max-h-full object-contain" src="../assets/img/vision.jpg"/>
         </div>
       </div>
   </div>
