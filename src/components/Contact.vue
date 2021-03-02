@@ -1,14 +1,13 @@
 <template>
 <div id="about" class="min-h-screen w-screen relative bg-white flex items-center justify-center z-50">
   <PageTitle class="text-black" title="kontakt."></PageTitle>
-  <div class="container mx-auto my-40" v-scroll-reveal="{ delay: 100, distance:'15rem'}">
-      <div class="grid px-6 grid-cols-1 md:grid-cols-5 gap-x-12 gap-y-32 mx-auto">
+    <div class="container mx-auto mt-40 mb-10" v-scroll-reveal="{ delay: 100, distance:'15rem'}">
+    <div class="grid px-6 grid-cols-1 md:grid-cols-5 gap-x-12 gap-y-32 mx-auto">
         <div class=" md:col-span-3 md:col-start-2">
             <div class="container w-auto h-auto flex items-center justify-center">
                 <iframe src="https://snazzymaps.com/embed/291961" width="100%" height="400px" style="border:none;"></iframe>
             </div>
         </div>
-
         <div class="col-span-1 md:col-span-2 md:col-start-1 flex items-center justify-end h-full text-center">
             <div class="container flex flex-col items-start justify-start">
                 <div class="mx-auto">
@@ -43,8 +42,8 @@
                 <ContactForm></ContactForm>
             </div>
         </div>
-      </div>
-  </div>
+    </div>
+</div>
 </div>
 </template>
 

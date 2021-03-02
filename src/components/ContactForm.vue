@@ -1,5 +1,5 @@
 <template>
-<div class="rounded-sm p-6 w-full max-w-lg mt-7">
+<div class="rounded-sm p-6 w-full max-w-lg">
     <div class="grid gap-8">
       <div class="bg-gray-300 focus-within:border-2 transition-all duration-500 relative rounded-sm p-1 font-bold">
         <div class="-mt-7 absolute px-1 text-base col-span-2">

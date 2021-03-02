@@ -1,33 +1,15 @@
 <template>
 	<div class="w-screen min-h-screen m-0 p-0">
-		<Navbar></Navbar>
-		<div id="body-container">
-			<Video></Video>
-			<!-- <AboutUs></AboutUs> -->
-			<Services></Services>
-			<Form></Form>
-			<AboutUs></AboutUs>
-			<Vision></Vision>
-			<Contact></Contact>
-			<!-- <Portfolio></Portfolio> -->
-			<Footer></Footer>
-		</div>		
+		<slot/>
+		<Contact></Contact>
 	</div>
 </template>
 
 <script>
-	import Navbar from '../components/Navbar.vue';
-	import Video from '../components/Video.vue';
-	import Form from '../components/Form.vue'
-	import AboutUs from '../components/AboutUs.vue';
-	import Services from '../components/Services.vue'
-	import Portfolio from '../components/Portfolio.vue'
-	import Footer from '../components/Footer.vue'
-	import Vision from '../components/Vision.vue'
 	import Contact from '../components/Contact.vue'
 
   	export default {
-		components: {Navbar,Video,Form,AboutUs,Services,Portfolio,Footer,Vision,Contact},
+		components: {Contact},
 	}
 </script>
 

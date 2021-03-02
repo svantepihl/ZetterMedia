@@ -35,7 +35,7 @@
     </div>
 
     <div class="service col-span-1 lg:col-span-2" v-scroll-reveal="{ delay: 250, distance: '50px' }">
-      <g-link href="#">
+      <g-link to="/ljud">
         <div class="title-container">
           <g-image src="../assets/icons/services/half-circle.png" class="icon"/>
           <h1 class="service-heading text-xl lg:text-2xl">
