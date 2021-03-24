@@ -21,6 +21,9 @@ module.exports = {
       '5xl': '2.9rem',
       '6xl': '3.9rem',
     },
+    letterSpacing: {
+      tighest: '-0.1em'
+    },
     screens: {
       'portrait': {'raw': '(orientation: portrait)'},
       // => @media (orientation: portrait) { ... }
