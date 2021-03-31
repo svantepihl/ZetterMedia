@@ -5,10 +5,10 @@
 			<div class="grid w-5/6 grid-cols-1 md:grid-cols-2 gap-12 mx-auto">
 				<div class="flex justify-center items-center flex-col tracking-widest">
 					<div class="container h-full max-w-4xl flex justify-start items-end flex-col text-right">
-						<h1 class="text-white text-2xl md:text-6xl leading-none font-bold mr-4">
+						<h1 class="text-white text-4xl xs:text-5xl md:text-6xl leading-none font-bold mr-4">
 							Vi kan
 						</h1>
-						<h1 class="text-white text-2xl md:text-6xl leading-none font-bold">
+						<h1 class="text-white text-4xl xs:text-5xl md:text-6xl leading-none font-bold">
 							Ljuddesign.
 						</h1>
 						<p class=" text-eggwhite text-base xl:text-2xl mt-10 mr-4">
@@ -18,10 +18,10 @@
 							Vi har flera års erfarenhet av ljud & musikproduktion och hjälper dig nå ett perfekt resultat varje gång.
 						</p>
 
-						<h2 class="mt-16 text-lg lg:text-4xl font-bold text-yellow mr-4">
+						<h2 class="mt-16 text-2xl xs:text-3xl lg:text-4xl font-bold text-yellow mr-4">
 							68%
 						</h2>
-						<p class="text-yellow mr-4">
+						<p class="text-yellow text-xs sm:text-base mr-4">
 							68% av internetanvändarna lyssnar på poddar (Internetstiftelsen)
 						</p>
 					</div>
